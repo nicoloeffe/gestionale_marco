@@ -1,0 +1,4172 @@
+[
+  {
+    "id": "59377650-73a2-46cb-a1ab-47366402d6c7",
+    "company_name": "ESPAM",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "37",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dc0208ca-129d-408e-a6fe-52ae0c53230b",
+    "company_name": "SI.RI.E",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "37",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "950adfc6-ec26-4b94-b4c6-61bc6acf86fc",
+    "company_name": "SYSTEMCOPY",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e7187809-a6fa-4d30-b7a0-6ebac471ccba",
+    "company_name": "GHENO",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f25ecfc1-2abb-4735-b394-fb4836c38f02",
+    "company_name": "SISTEMA UFFICIO",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e348da0c-50b3-474d-869c-531f907026f7",
+    "company_name": "FMF 9001",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "33",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9ffccd34-d583-49b6-9e31-d3fd529d4cd3",
+    "company_name": "SOCAGE RAPTOR",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "94e30233-7f98-4a07-8424-8dce325f86f3",
+    "company_name": "ATLAS FACILITY (9001-14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "26751e63-37e4-4ba0-a26a-18c404298fbf",
+    "company_name": "LOMEK",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "22;17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7f4b50e8-ea8c-4376-bf93-9005a0477652",
+    "company_name": "BLUSAFE FIRE 9001-45001",
+    "region": "PIEMONTE",
+    "province": "NO",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4457a406-d65f-4b57-b67f-22c8e6d565cd",
+    "company_name": "BILANCIAI ASSOCIATI FRIGNANESI",
+    "region": "EMILIA",
+    "province": "MO",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "93f3334c-b397-4285-86c0-7956e0f21ab9",
+    "company_name": "O.R.A. DI GHEDA  (9001-45001) STAGE 2",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": "29; 31; 34;35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "87a8eba1-f3f3-44a9-9008-f76ca70629cd",
+    "company_name": "ZETA DUE",
+    "region": "VENETO",
+    "province": "TV",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e54b7487-a309-4d99-9f22-688ec314b8f8",
+    "company_name": "APUANA AMBIENTE (715)",
+    "region": "TOSCANA",
+    "province": "MS",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: APUANA AMBIENTE (14001) | APUANA AMBIENTE (333) | APUANA AMBIENTE (715) | APUANA AMBIENTE (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "999001aa-6f8d-4d6c-8a75-335e344b150e",
+    "company_name": "CFC SERVICE",
+    "region": "TOSCANA",
+    "province": "AR",
+    "ea_code": "18; 29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b7814481-388a-4c05-a13a-9ec8989375d8",
+    "company_name": "RICCOMINI FRANCESCO (9001-45001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "37929973-2d53-4189-9b6c-a816a05c6b1f",
+    "company_name": "NICCOLAI",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "13a4dca3-4a61-49f5-aefe-7223a16c5c2e",
+    "company_name": "COGER (9001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ba35d655-01ab-4c2c-a9dc-a4032cf2f502",
+    "company_name": "MINERVA",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8e29629e-97aa-47e1-9d55-195dab3c474e",
+    "company_name": "SOUTH METAL CORPORATION 9001-14001-45001",
+    "region": "PUGLIA",
+    "province": "FG",
+    "ea_code": "24; 29; 39",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1caf3df9-67e8-4374-a2f6-53e4f579193d",
+    "company_name": "BERGAMASCA TRASPORTI",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": "31;39",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b974a9eb-e498-4f13-92ed-bcf27fb99830",
+    "company_name": "ISSITALIA ESTENSIONE SCOPO 9001",
+    "region": "VENETO",
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b58fa9d9-6545-4de2-a7fd-50648a752ccf",
+    "company_name": "BERGAMASCA TRASPORTI 14804",
+    "region": "LOMBARDIA",
+    "province": "CO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2ece5923-c2b1-4626-bf7e-e6a0055893f9",
+    "company_name": "F.M. SERVICE",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "bcf8bbe1-43de-4df7-ba42-d71bbe550321",
+    "company_name": "V.P. SYSTEM",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b5a3fa0d-be97-42cc-9b28-7561aed9175c",
+    "company_name": "SICILYPOS",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e4c96146-342b-4458-9758-42fe908db6f3",
+    "company_name": "GIANQUINTO",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6f22b418-4914-4938-932f-b67ac3ee69d4",
+    "company_name": "AFEP 37001",
+    "region": "LOMBARDIA",
+    "province": "CO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8175d79b-758f-43c2-b75f-8414f4e575e3",
+    "company_name": "ISSITALIA 27001",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c846d97c-66f0-450e-9990-c2448fe4d543",
+    "company_name": "PRO.GES.S (27001)",
+    "region": "LOMBARDIA",
+    "province": "LC",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f7e0e469-e9f0-4438-8c2a-b3d5325d379e",
+    "company_name": "ICONA (9001-27001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5569f36b-e375-4ed5-92a8-35b6a39ab921",
+    "company_name": "SKY WALKER",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fcd99815-8799-40df-bfbf-8e5e36064840",
+    "company_name": "SEI2SEI CONSULTING",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ff58c67b-49b1-4e68-8043-e717feaf4553",
+    "company_name": "MAFFEI TECHNOLOGY",
+    "region": "EMILIA",
+    "province": "RE",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "cc1e43ca-b0de-4ac4-bb0b-de72e41e9520",
+    "company_name": "TELESKILL ITALIA (27001)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e23aee56-975d-471f-bc36-a2a0e423ad96",
+    "company_name": "PATTO SICUREZZA",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "d58e482d-3da6-45d2-8c74-23fe13287845",
+    "company_name": "FIRST OUTSOURCING",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0e799ff4-2434-4ee6-b137-9d0d6c6d61f8",
+    "company_name": "RC GROUP ITALIA",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b47f10ab-fe8b-45e5-9183-fed986f68d8d",
+    "company_name": "GEB SOFTWARE 27001",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9a5e1b9b-587f-4b67-aa62-c3c354a75c25",
+    "company_name": "TELESKILL (pdr 125)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: TELESKILL (27017-27018) | TELESKILL (pdr 125)",
+    "needs_review": true
+  },
+  {
+    "id": "4e22f8ba-adc9-4e50-a42a-2887d256ee30",
+    "company_name": "E.A. ENTERPRISE",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "39a64a03-51d2-4c81-8458-cd2efb75b4dc",
+    "company_name": "PSTM (27001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f1a82162-6a71-48d3-8e2b-fd3b271dc02c",
+    "company_name": "SOFTWARE SOLUTIONS",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ef298956-4537-4612-9434-b67e5cdc0683",
+    "company_name": "NAVA SMALL COMPANY (9001-45001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "35",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: NAVA SMALL COMPANY (14001) | NAVA SMALL COMPANY (9001-45001)",
+    "needs_review": true
+  },
+  {
+    "id": "160c257d-9edc-46d4-a5bb-13b4f4df13c4",
+    "company_name": "EREDI CALDANA (9001-45001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "641b54f3-f44b-4b0b-b1e3-8ff2c39d78d6",
+    "company_name": "F.O.R.S.  (14001)",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": "17; 28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c1403430-4c11-43dc-88a2-74bbd6e42523",
+    "company_name": "METIKI 1863",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "4",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "db5a8026-7ed1-46fa-abf0-56148abdbb22",
+    "company_name": "LENERGIE",
+    "region": "LOMBARDIA",
+    "province": "PV",
+    "ea_code": "28;26",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9dd3af55-05d4-447e-950a-c36e1f592c84",
+    "company_name": "F.LLI CANESTRINI",
+    "region": "EMILIA",
+    "province": "FC",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e5e57f7c-ee0f-4ac4-b481-db58475e3f04",
+    "company_name": "BARUFFALDI",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: BARUFFALDI | BARUFFALDI (14001)",
+    "needs_review": true
+  },
+  {
+    "id": "d5448102-dc15-4ffe-80b0-e50f581a74ca",
+    "company_name": "BIONINFEA (9001)",
+    "region": "LOMBARDIA",
+    "province": "CR",
+    "ea_code": "12",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: BIONINFEA (22716) | BIONINFEA (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "9467181d-db29-4d9c-a3ac-ed3a9fe022b4",
+    "company_name": "COSMICA (9001)",
+    "region": "LOMBARDIA",
+    "province": "CR",
+    "ea_code": "12",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: COSMICA (22716) | COSMICA (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "f19f6508-2f5d-4d8a-9773-9718d2b97eb3",
+    "company_name": "BONI",
+    "region": "EMILIA",
+    "province": "FC",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "43433399-ab12-4fd3-8777-f4100d5dd3ff",
+    "company_name": "ORTOFRUTTICOLA SAN LAZZARO",
+    "region": "EMILIA",
+    "province": "BO",
+    "ea_code": "29; 03",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3bdd2349-e41b-4527-b474-bcc4e9a87aeb",
+    "company_name": "CS ORVEM (14001) STAGE 1",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "19; 29",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: CS ORVEM (14001) STAGE 1 | CS ORVEM (14001) STAGE 2",
+    "needs_review": true
+  },
+  {
+    "id": "bd92a997-3a0d-4ad3-8c4d-0d74edda851b",
+    "company_name": "I.CON (9001-14001)",
+    "region": "LOMBARDIA",
+    "province": "MB",
+    "ea_code": "33; 29",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: I.CON (27001-27017-27018) | I.CON (9001-14001)",
+    "needs_review": true
+  },
+  {
+    "id": "dd962d97-2bc7-455d-9aa1-bac50c207c38",
+    "company_name": "RAMEDICAL",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": "4",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ab419bc3-3495-406d-a04d-db1b622d42f6",
+    "company_name": "BACHIORRINI",
+    "region": "UMBRIA",
+    "province": "VT",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7467e120-3ebf-4e9b-92cd-29991c44bf7d",
+    "company_name": "AGOSTINI",
+    "region": "TOSCANA",
+    "province": "LI",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7737dc26-eb43-4778-9793-7f8dca7e4385",
+    "company_name": "FASHION LAMP",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "55e6db26-e2d9-44ad-8fec-5d9a8885b7f4",
+    "company_name": "ECOPRISMA stage 1",
+    "region": "TOSCANA",
+    "province": "PO",
+    "ea_code": "12; 34; 35",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: ECOPRISMA Stage 1 | ECOPRISMA stage 1",
+    "needs_review": true
+  },
+  {
+    "id": "421c43b0-3392-4024-9c0d-beb165e5b7e6",
+    "company_name": "CIMA IMPIANTI",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "18E; 17J",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a9db1c35-b655-41c5-b415-6c49d4995041",
+    "company_name": "TAGETIK (45001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "33",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3303ddfc-ea52-4acd-bdc2-58001c23723a",
+    "company_name": "STUDIO BALDI ASSOCIATI",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "72d1aa7a-d138-4f2a-af03-c068cbc94071",
+    "company_name": "FAP (9001)",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "31;32",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1f0f4e98-509f-440b-b8a7-bf55df51f661",
+    "company_name": "O.M. LEGNO",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "06; 28; 29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "68ee1a18-fefc-4015-9604-487e9b13f4f7",
+    "company_name": "TALIANI 9001",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fad79d5f-dfcf-4c4b-8569-38b0d6c62a47",
+    "company_name": "IMPERIAL GUTENBERG (GMP 15378)",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: IMPERIAL GUTENBERG | IMPERIAL GUTENBERG (GMP 15378)",
+    "needs_review": true
+  },
+  {
+    "id": "8f19bb69-78d6-45f0-ba30-d523a374ad95",
+    "company_name": "DL SYSTEM",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1284d88d-29fa-472f-b9ff-e37190cbae6a",
+    "company_name": "GM UFFICIO",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": "34;29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3f60a698-ee4b-4070-8579-15970b66360f",
+    "company_name": "BELLANTE GIUSEPPE",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "603b9e30-b23b-42a4-85d1-8c3e163ebd57",
+    "company_name": "C.A.T. DI VILLARI",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7298d453-847f-4c85-80e9-31ad54a43d7b",
+    "company_name": "TECNOSALV",
+    "region": "SICILIA",
+    "province": "AG",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5f57eb36-dea9-45c9-b0bd-8815edda834d",
+    "company_name": "OFFICE CENTER TRINGALE stage 1",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: OFFICE CENTER TRINGALE Stage 2 | OFFICE CENTER TRINGALE stage 1",
+    "needs_review": true
+  },
+  {
+    "id": "7893131b-461d-4201-bb27-17199bad0055",
+    "company_name": "RE-ITALY",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5ddcf060-72b9-43ca-8305-03c11680fbbe",
+    "company_name": "WINFLOW 22301",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dbbb32b9-4e34-4052-8ace-aa0759ba165d",
+    "company_name": "MANUFATTI PLASTICI",
+    "region": "EMILIA",
+    "province": "MO",
+    "ea_code": "14",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e8378cc8-404f-47ec-ac05-3be7d3c76d4e",
+    "company_name": "TELESKILL PDR 125 - Q-QID",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0ccfc272-69e2-4b64-9065-58683811c0b7",
+    "company_name": "ARREDA UFFICI",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "77d1fafd-0c54-4d72-9446-e07a8f21e987",
+    "company_name": "PULEO",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dfafe277-dae1-4b5a-a9d2-4058c923a112",
+    "company_name": "NEMESI TECH 9001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1db87241-0a3d-4279-a775-910fb438eb89",
+    "company_name": "STEELCOM 10253-4",
+    "region": null,
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "d5a733d8-53ee-4a37-8f4a-34e3ee2e030e",
+    "company_name": "BUS COMPANY (37001)",
+    "region": "PIEMONTE",
+    "province": "CN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4eb5edf2-b534-4fa8-a94e-5456f51b4d4f",
+    "company_name": "SFERA DEFENCE",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "cfcf873a-6dd4-4810-9300-ef48509a4538",
+    "company_name": "BID COMPANY 27001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a43fa653-73b9-4399-aaf5-122985b765d8",
+    "company_name": "MEPA EDUCATIONAL",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "932b8ebe-2455-4899-842c-1b95b5d94990",
+    "company_name": "SERVICENET 21",
+    "region": "Lazio",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2e4d3aec-9eb9-4f32-ab6b-ec25c62d72ad",
+    "company_name": "FACTOR Y 9001-27001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "66972b4c-c9c5-4fde-9260-e1afdfa0f225",
+    "company_name": "CLIMO ACADEMY",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b1c68ca6-2732-4ed2-bcea-21f60dfbae02",
+    "company_name": "GA",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: GA | GA Stage 2",
+    "needs_review": true
+  },
+  {
+    "id": "dc65adbc-e4d5-4885-856c-af51bb5fc2ef",
+    "company_name": "MINERVA PDR 125 STAGE 1",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: MINERVA PDR 125 STAGE 1 | MINERVA PDR 125 STAGE 2",
+    "needs_review": true
+  },
+  {
+    "id": "6847bbb6-421a-47d2-9dd6-e6369cd0394e",
+    "company_name": "QUIK PAK",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b4226871-57eb-495c-a8e4-097985ec3945",
+    "company_name": "S.G.M. ELETTRONICA",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "19",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "cb3d4aff-5c6f-4139-a100-e5e919eabc84",
+    "company_name": "COPROMAR",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "3; 29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a5dc8e41-7f56-43c8-ab48-60c5db24f337",
+    "company_name": "TRASLOCHI BORIS",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "31;32;35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "eb1b29ab-2efb-4207-ae85-6df2367387e6",
+    "company_name": "STEELCOM FITTINGS (45001)",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: STEELCOM FITTINGS (45001) | STEELCOM FITTINGS (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "733db3a2-809f-4449-b262-eaeffe16c262",
+    "company_name": "CALZIFICIO ZETA",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "14",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "08692caa-3419-46b7-b4fc-ac7ab601320e",
+    "company_name": "OMFP",
+    "region": "LOMBARDIA",
+    "province": "CO",
+    "ea_code": "17; 18",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "bd6b2b09-f6d9-4f3b-9016-d326252fae8b",
+    "company_name": "TRECI CARRELLI",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "29; 32",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "647d3502-9c93-466f-a070-49c3345b9fb4",
+    "company_name": "NUOVA ELETTRA (9001-14001)",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "58276595-32fc-4616-8466-9f677769bf29",
+    "company_name": "ITAL -ASSEMBLAGGI",
+    "region": "EMILIA",
+    "province": "RE",
+    "ea_code": "18",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c6e83267-086f-45df-a8b8-835426c7761d",
+    "company_name": "ISFEL",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "37",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "17ef990b-3848-4d18-8006-935e5cf080a4",
+    "company_name": "SEFIR (9001-14001-45001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "31T",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "639421b0-1eb1-468c-9f54-e35ff8215964",
+    "company_name": "TERRA&ARIA",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "aa3624ca-f24f-4be1-be64-5655eaf21c00",
+    "company_name": "BUGGIANI",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2623df75-59e6-4df3-bf31-0b0aa8ba66f2",
+    "company_name": "PINO MARGHERITA",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ca3a881e-feb0-485a-9a5b-6e46211550aa",
+    "company_name": "IVS (14001-45001)",
+    "region": "VENETO",
+    "province": "TV",
+    "ea_code": "12; 28",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: IVS (14001-45001) | IVS (39001) | IVS (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "e15a34e5-c1aa-4ae6-b2ac-cec6d216111c",
+    "company_name": "CORDUSIO SERVIZI (45001)",
+    "region": "VENETO",
+    "province": "TV",
+    "ea_code": "35F; 35A",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: CORDUSIO SERVIZI (45001) | CORDUSIO SERVIZI (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "1d00a5aa-f581-4a6f-bdd9-64fdd3092607",
+    "company_name": "DIEFFE ASSISTENZA",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5287982d-8e86-426f-ae60-84afbbc13722",
+    "company_name": "GALLI E MORELLI",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dcae5175-4002-40fa-a2f1-f6ce88881365",
+    "company_name": "OLEIFICIO MAMBUCA (Estensione scopo)",
+    "region": "CAMPANIA",
+    "province": "SA",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: OLEIFICIO MAMBUCA | OLEIFICIO MAMBUCA (Estensione scopo)",
+    "needs_review": true
+  },
+  {
+    "id": "f05f7e0b-189d-4ad7-873a-d3e3799f875b",
+    "company_name": "HERMES CONSULTING",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "37",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ba7a1f32-dde7-4008-9754-594f2abfc90f",
+    "company_name": "HERMES CONSULTING estensione scopo",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "37",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "cd9221d9-2e12-485d-9a25-7b7060728525",
+    "company_name": "MDM TEAM",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "33; 34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "29cdbfb7-6746-4b88-8049-da223829d42d",
+    "company_name": "BUROGRAF COMMERCIALE",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "717e4447-2cba-4459-b3cb-e85d55978310",
+    "company_name": "MEI TECNOLOGIE E COSTRUZIONI (14001)",
+    "region": "EMILIA",
+    "province": "BO",
+    "ea_code": "28",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: MEI TECNOLOGIE E COSTRUZIONI (14001) | MEI TECNOLOGIE E COSTRUZIONI (45001)",
+    "needs_review": true
+  },
+  {
+    "id": "5eebab25-4c6d-4c1f-9fd8-690ce6c78dcf",
+    "company_name": "SOMA",
+    "region": "EMILIA",
+    "province": "FC",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8793b1ce-2216-49e2-9de0-77cc846476b3",
+    "company_name": "CIEMME IMPIANTI (9001-45001)",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9870f69d-4e3d-451f-87a3-f8bf91ca6568",
+    "company_name": "AB TRAVEL",
+    "region": "LAZIO",
+    "province": "LT",
+    "ea_code": "31; 39",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "eea2c215-9d48-4a81-9215-3546015218f7",
+    "company_name": "APR INSTRUMENTS",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e07c396c-00a2-4815-b3ca-35aba6d39046",
+    "company_name": "SOVRAIN AI 9001-27001-27017-2708",
+    "region": "SARDEGNA",
+    "province": "CA",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "901a4c26-1730-4ecc-97af-103ccd475317",
+    "company_name": "SINAI",
+    "region": "SICILIA",
+    "province": "TP",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7a8e9877-6021-45cc-95d6-c2deb4583fb6",
+    "company_name": "DONINI",
+    "region": "PIEMONTE",
+    "province": "VB",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9488063c-2751-49c3-898b-6bb24766b635",
+    "company_name": "STUDIO SCARRONE",
+    "region": "PIEMONTE",
+    "province": "TO",
+    "ea_code": "35A",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "58fe6882-3823-470a-b3d4-ee0a3347fba0",
+    "company_name": "MARIO NAPOLI",
+    "region": "SICILIA",
+    "province": "SR",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "bbe5d930-c504-4fa9-ba19-f343731dd649",
+    "company_name": "ARGO",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c8b714a4-a189-4c7d-86a6-2ec6095ed4bc",
+    "company_name": "3.0",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "51c9e770-8ce7-46ea-943a-dc11f207d79b",
+    "company_name": "ARTALE",
+    "region": "SICILIA",
+    "province": "AG",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "da241db1-256e-47eb-826f-3064ca1a17fc",
+    "company_name": "ST OFFICE",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f5c29bc7-2d74-4fb8-8fc3-f66bf34de54b",
+    "company_name": "NUOVA ELETTROBIT",
+    "region": "SICILIA",
+    "province": "AG",
+    "ea_code": "34D",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "52215501-bb3e-4c50-aaa7-9ca4a0972598",
+    "company_name": "GECKOSOFT 27017-27018",
+    "region": "TOSCANA",
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "161d50f9-abdf-4057-b58f-5caf96111d51",
+    "company_name": "A&M ISOLAMENTI",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9712f8b9-f75f-4142-880b-1fbc37a5f572",
+    "company_name": "TEKNE",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fe5c0c86-68d2-4949-ba05-dc16c58febda",
+    "company_name": "SALPINOX (9001)",
+    "region": "LOMBARDIA",
+    "province": "CR",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: SALPINOX (45001) | SALPINOX (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "e95c5a8c-bc05-4ba7-ae5a-94d03a9a8ec2",
+    "company_name": "MITO INGEGNERIA",
+    "region": "EMILIA",
+    "province": "RE",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b0c860c8-335e-4be6-91a2-f61d6dfbfafc",
+    "company_name": "FORMAZIONE E SERVIZI",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "277d6388-2102-4e64-96d9-3a6578493bbd",
+    "company_name": "GEB SOFTWARE 9001",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e5dbe53b-fdfe-4d60-ac20-02ee0c7fc0e9",
+    "company_name": "MARESCA VIAGGI",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9d3b989c-4f0c-45d5-929b-facd2ac89e2c",
+    "company_name": "ALISFER 9001",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0b1abc79-54e1-4eea-ba2c-649b79bf35dd",
+    "company_name": "M.I.E COSTRUZIONI",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b8268500-7f1b-4262-903e-177f9c4664e1",
+    "company_name": "M2CONSULENZE",
+    "region": "VENETO",
+    "province": "VE",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f6764cd7-d163-4ea8-8f5d-832f424b0799",
+    "company_name": "ECOPETROL (9001-27001)",
+    "region": null,
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1b0a80af-9390-4181-8e2f-a3b613bdad67",
+    "company_name": "ATTAL GROUP (27001-37001)",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3e5c975d-029d-4a2c-afe0-e65c1264b002",
+    "company_name": "OMNIA",
+    "region": "TOSCANA",
+    "province": "PO",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0d99e25e-8c4b-4c70-8938-a4bb949eeac6",
+    "company_name": "TINTORIA TIMA",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "4",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "932e8d58-251e-4e4e-93d3-0ccc6e224a32",
+    "company_name": "ROYAL GLOBAL NET (9001-14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "655e3203-6148-4ea8-9b71-a1d94a7fe52b",
+    "company_name": "OFFICINE BARBARIOL 14001",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "21591ed6-0bd2-46df-8b3d-4e19d58a6c4c",
+    "company_name": "MA-AG",
+    "region": "LOMBARDIA",
+    "province": "CR",
+    "ea_code": "18",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "82aa01ff-1df8-4d97-96e3-714fdc129e88",
+    "company_name": "CONSORZIO UNICA (9001-14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "13c7cc5d-ec84-4f97-9981-7b8db8b862c5",
+    "company_name": "TESMEC SPA (9001-14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "d652ffb7-7d04-461c-ad95-75268326c8ef",
+    "company_name": "INART",
+    "region": "VALLE AOSTA",
+    "province": "AO",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5232a016-a433-4c8e-b87d-3ffe0e662fa0",
+    "company_name": "ZANOTTO (45001)",
+    "region": "VENETO",
+    "province": "VE",
+    "ea_code": "39",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: ZANOTTO (45001) | ZANOTTO (9001-14001)",
+    "needs_review": true
+  },
+  {
+    "id": "42a60e30-387a-4828-8468-45bc18d486c6",
+    "company_name": "TEKNE 9001-45001",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "75f355f3-15de-4192-95fd-168b07582b85",
+    "company_name": "ITALCABINE",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": "16; 28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "d6076c40-2047-46bb-9d65-51c3386f0111",
+    "company_name": "CESMA (9001)",
+    "region": "PIEMONTE",
+    "province": "TO",
+    "ea_code": "37; 39",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "df6accc4-5d93-463d-8f1e-be0b320753e0",
+    "company_name": "GIOVANNETTI",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1a5379ea-a9d6-4377-8404-8cc49a42abac",
+    "company_name": "LANDUCCI (14001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c58098fc-b130-421e-aaa1-21857d3e1763",
+    "company_name": "VILLA GINESTRE",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "27806864-52ef-4b88-99b4-d8a1d5b83484",
+    "company_name": "BIONINFEA 45001 (STAGE 1)",
+    "region": "LOMBARDIA",
+    "province": "CR",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: BIONINFEA 45001 (STAGE 1) | BIONINFEA 45001 (STAGE 2)",
+    "needs_review": true
+  },
+  {
+    "id": "eb8bc011-4b4f-4e13-a4ad-4268ebe65585",
+    "company_name": "SOCOFER 9001",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": "17;06;22",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b42ddb3b-d713-48ca-9dc0-555d42b63c7e",
+    "company_name": "SERVICENET21 (14001)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: SERVICENET21 (14001) | SERVICENET21 (27001)",
+    "needs_review": true
+  },
+  {
+    "id": "5a99a751-5cbb-43ac-9267-268d00a0ca78",
+    "company_name": "SINTEL ENGINEERING (9001)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": "34",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: SINTEL ENGINEERING (14001) | SINTEL ENGINEERING (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "301b74d6-2897-4d57-80c8-d4e98d4600a2",
+    "company_name": "SAPI",
+    "region": "SICILIA",
+    "province": "TP",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "344b8d76-7e01-40ce-b894-82e8aa2e47ef",
+    "company_name": "TUTT'UFFICIO",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "367d424c-a472-405c-9875-1382c2020e0f",
+    "company_name": "EMPIRE  9001_14001_45001",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3a49aa5d-1190-4f21-bb9a-bf2462891dc8",
+    "company_name": "ELETTRONICA SERVICE GROUP",
+    "region": "SICILIA",
+    "province": "SR",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ba5dac04-d20e-49a7-9d4e-59bcb3a8b29b",
+    "company_name": "PRESYSTEM",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "11df6871-caa3-4e2f-a5ac-adb2ae12d955",
+    "company_name": "SCIARRINO",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "35G",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7dafe3a1-0035-4fec-9185-340a9a58f9b0",
+    "company_name": "GECKOSOFT (9001)",
+    "region": "TOSCANA",
+    "province": "PI",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: GECKOSOFT (27001) | GECKOSOFT (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "2d862f13-b4f2-4831-8845-088cab41e2b5",
+    "company_name": "NINETYNINE (PDR 125)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0120e03d-2731-46d3-85c0-7df1c9f7fdb1",
+    "company_name": "MASTER FIRE",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c1e623a3-43e5-40fa-b1b4-4b88bd581aea",
+    "company_name": "AN.SE.SA",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "cf5fb749-5528-498b-87e1-765063f5851b",
+    "company_name": "OLIDATA (ISO 26000)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: OLIDATA (14001-45001) | OLIDATA (9001) | OLIDATA (ISO 20000) | OLIDATA (ISO 26000)",
+    "needs_review": true
+  },
+  {
+    "id": "ee5a5e5a-f831-45a0-af60-131c6508fcb2",
+    "company_name": "TAGETIK SOFTWARE 27001 - 22301 - 27017-27018",
+    "region": "TOSCANA",
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3ccc14af-490c-46d3-9c6a-e5d05e5d39f4",
+    "company_name": "ATLANTE (22301)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: ATLANTE (20000) | ATLANTE (22301)",
+    "needs_review": true
+  },
+  {
+    "id": "79f91630-de39-430e-a831-4eaa1b383392",
+    "company_name": "MEI TECNOLOGIE 9001",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "09507862-17c6-433c-9337-27d70794303d",
+    "company_name": "BID COMPANY 9001",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f7286857-45ed-4454-8550-11bb62ae0ec9",
+    "company_name": "VIRGILIO TMH",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "29;32",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7bfd4db6-c251-4653-b76a-efd3162331bf",
+    "company_name": "COMELETRIC",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "bf30728f-8dc6-4d4b-89ca-55f0d97b15eb",
+    "company_name": "INDAL (45001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": "03; 29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9f9e3297-603d-4532-b483-9eb7ddb61dbc",
+    "company_name": "GAZZERA (9001-45001)",
+    "region": "PIEMONTE",
+    "province": "CN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2eeb0c98-b774-427f-a12f-ba37e746a5f9",
+    "company_name": "UNITEX ITALIA",
+    "region": "PIEMONTE",
+    "province": "TO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a7332e53-6eb9-413d-9bcf-59c2c1821d46",
+    "company_name": "PFL",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "cbc1e2f2-8c50-454d-ab37-2adc58adc346",
+    "company_name": "AFEP",
+    "region": "LOMBARDIA",
+    "province": "CO",
+    "ea_code": "28;29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e84fd929-c6fd-462f-9662-c3469a6e2d0b",
+    "company_name": "MECCANOGRAFICA",
+    "region": "TRENTINO",
+    "province": "TN",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1313450d-4c45-4260-9fdf-224d976bc854",
+    "company_name": "SAVONITTI",
+    "region": "FRIULI",
+    "province": "UD",
+    "ea_code": "3;29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7315793a-8939-4aec-b951-6ae795934846",
+    "company_name": "F.LLI SIMEONI",
+    "region": "FRIULI",
+    "province": "UD",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2be95c23-5289-4a26-8a1e-54fee51a66b7",
+    "company_name": "ALTA VAL TREBBIA (9001-14001)",
+    "region": "EMILIA",
+    "province": "PC",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "60cd85aa-478a-44cd-a228-7688129662cb",
+    "company_name": "COSTRUZIONI GENERALI APPENNINO (14-45)",
+    "region": "EMILIA",
+    "province": "MO",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a54ff602-52f3-482a-b977-518ab0f551cb",
+    "company_name": "F.LLI FABBRI",
+    "region": "EMILIA",
+    "province": "FC",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c6190d75-eccf-4e3d-bb9f-8fb49369b4b6",
+    "company_name": "FACILIX (SOLO 9001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "196364f4-a688-483b-be97-241540036c7d",
+    "company_name": "SANTARNECCHI",
+    "region": "TOSCANA",
+    "province": "SI",
+    "ea_code": "15",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ba3a7768-c411-4d40-9950-e5d2be4677a2",
+    "company_name": "GLOBAL SERVICE (9001-14001-45001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c72ad65a-12c5-4404-b36c-5bc003f2f0c2",
+    "company_name": "SCOT FIRENZE",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "32, 29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "64a25167-272f-479b-a341-1aa231c58bb3",
+    "company_name": "BORETTI & C .",
+    "region": "TOSCANA",
+    "province": "PO",
+    "ea_code": "3",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6275fe68-cab9-4089-97ef-eebc1b84ba96",
+    "company_name": "NTT ITALIA (ISOQAR LTD)",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "255d1afe-d49c-460e-abc7-c683007af3e5",
+    "company_name": "VIGILI DELL'ORDINE (14001_45001)",
+    "region": "LIGURIA",
+    "province": "SV",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "42b59718-06bf-4d43-9a96-6c5a13323e8e",
+    "company_name": "MAIONE TRADING",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "af638770-880b-4ab3-8682-0339c7b78fa3",
+    "company_name": "TESMEC RAIL (45001)",
+    "region": "PUGLIA",
+    "province": "BA",
+    "ea_code": "22; 34; 19;18",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: TESMEC RAIL (45001) | TESMEC RAIL (9001-14001)",
+    "needs_review": true
+  },
+  {
+    "id": "80de1966-77d8-43da-be44-f5652b4feb9c",
+    "company_name": "MF SISTEMI",
+    "region": "SICILIA",
+    "province": "SR",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4d3fd2a2-5d93-461a-98bb-ee41906311e9",
+    "company_name": "MI.SA.R. DI SACCA' DOMENICO",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "601ebc37-b1da-4c18-8614-fb4eeec3bc2c",
+    "company_name": "OFTEC",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a0be97c9-626f-4aed-9c8b-8764d612c672",
+    "company_name": "R.C.Z.",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ab6a3ea0-cec4-4783-a2bf-d8668f2f404b",
+    "company_name": "BRICCOLA",
+    "region": "LOMBARDIA",
+    "province": "CO",
+    "ea_code": "24; 39",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a5cb9797-9c77-4958-9f47-ee30fe19337a",
+    "company_name": "TECNO3",
+    "region": "EMILIA",
+    "province": "MO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "12f8f0b9-fb4c-4786-8983-5c1e92980fc9",
+    "company_name": "AUTOTRASPORTI BORETTI MARCELLO",
+    "region": "TOSCANA",
+    "province": "PO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "03799a29-64a8-4282-8ade-9898501bed68",
+    "company_name": "GENERAL COPPER",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1feba66e-0aab-44b4-a7ad-fbf522d89e95",
+    "company_name": "EUREKA (27001)",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "bcf948f9-4f34-4a05-bd39-13c05b325501",
+    "company_name": "DAMA ITALIA",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f7bb3c4a-bb52-4a5a-87cd-315a3201e7dc",
+    "company_name": "RAI SERVICE (9001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: RAI SERVICE (22000) | RAI SERVICE (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "7bf0a436-e4d5-4ecc-96f6-07a618956b39",
+    "company_name": "TES GROUP (14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5569f13e-b532-48c5-a374-8d33af410b9b",
+    "company_name": "DATEXEL",
+    "region": "LOMBARDIA",
+    "province": "VA",
+    "ea_code": "19",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "16fae75d-9823-4cd0-9915-def108e1c2ad",
+    "company_name": "JOJOLLY",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ea63fcc2-fb3b-4d1b-9787-d83c2868f240",
+    "company_name": "AMBROSIANA SPURGHI (45001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "39",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: AMBROSIANA SPURGHI (45001) | AMBROSIANA SPURGHI (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "7560ea72-f7d4-4fd0-94b3-6f3c1523866a",
+    "company_name": "DIA (14001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": "03;29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "456d9bfa-3472-4cff-b93c-366eaa37aeb0",
+    "company_name": "MARKIT ITALIA",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dd36ca7f-29d2-473f-b219-bc916cc6d50c",
+    "company_name": "AUTOSERVIZI PELLEGRINI (45001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "98b11f99-5c9b-4c4f-872a-3b845c30d28f",
+    "company_name": "O.T.R. ORGANIZZ. TECNICI RIUNITI",
+    "region": "EMILIA",
+    "province": "PC",
+    "ea_code": "34;19;29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "df6be903-33a9-4d44-b1ce-f4af83472986",
+    "company_name": "RUBBER TECHNOLOGY",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "14",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1230e430-7fff-4d0d-84a5-50d0ae8fe387",
+    "company_name": "IAMHERO",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "33",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e3de488a-da4d-49eb-96e3-fb17f3dbd510",
+    "company_name": "IST. RADIODIAGNOSTICO ITALIANO",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2ca69c6e-0cd4-4fb4-a820-bd296b882903",
+    "company_name": "CENTRO POLIDIAGNOSTICO CASTALDO",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9c2ac883-cba5-48f8-8359-57efd8055b43",
+    "company_name": "STUDIO MADARO",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4e678b17-244a-435e-b1e2-0222e0f16aec",
+    "company_name": "CLAD 14001-45001",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5eda411e-da86-4dfc-a752-352132129470",
+    "company_name": "CORSI",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "39; 24",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "05453f19-f7a4-4069-b836-69e100071732",
+    "company_name": "MENEGHELLI (14001_45001)",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "11a4a951-ba01-4cb0-9995-1bb77cd33d11",
+    "company_name": "TRASPORTI E SCAVI MENON (14001-45001)",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "36fe0934-f168-4c66-94b5-a180a56e2f30",
+    "company_name": "MODELLERIA FERRIERI (9001-14001)",
+    "region": "TOSCANA",
+    "province": "SI",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b07f93ae-ec59-4e9b-a523-1a6a13a19823",
+    "company_name": "SISTEMA AMBIENTE (9001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "39;24;36",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: SISTEMA AMBIENTE (14001) | SISTEMA AMBIENTE (45001) | SISTEMA AMBIENTE (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "e01a7d48-987b-4e52-9325-6bbe3e9b0bfa",
+    "company_name": "CNP (14001-45001)",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "31; 35",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: CNP (14001-45001) | CNP (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "47264bd2-16c0-4fa6-b4a4-2d578f601279",
+    "company_name": "IMPRESA DIDDI 14001",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8f7905db-7a84-45cd-af78-5fba51795d79",
+    "company_name": "ECOLOGIA FALCINELLI (14001)",
+    "region": "TOSCANA",
+    "province": "AR",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: ECOLOGIA FALCINELLI (14001) | ECOLOGIA FALCINELLI (45001)",
+    "needs_review": true
+  },
+  {
+    "id": "f9e5f497-363e-442d-bc3c-052e74a5804a",
+    "company_name": "TAGETIK SOFTWARE (14001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "33",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b9078a52-9030-445f-9c20-65254069f946",
+    "company_name": "FICARROTTA",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6352a4eb-2385-4283-8217-bdabdfc737f2",
+    "company_name": "2C SERVICE ASSISTENZA",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "767cba12-a9ca-4641-b52a-41b9a6426f0d",
+    "company_name": "SFERA SYSTEM",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "67bd8ce5-e27e-439f-b928-f1cf65cf45f3",
+    "company_name": "ASTER SOLUTIONS STAGE 2",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "bf6124a9-c5f7-4937-8ddb-d19cd15a3382",
+    "company_name": "NUOVA CONTEC",
+    "region": "FRIULI",
+    "province": "PN",
+    "ea_code": "18;29;39",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "80bf8341-1bbe-4d0e-a9eb-62d62a4a766d",
+    "company_name": "ECOEDILBIT",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b6ae8abd-4417-469b-a0a0-54f809d61c54",
+    "company_name": "MICROIDEA (PDR 125)",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "627339c7-f96e-4a6f-850f-77d7a28b92d6",
+    "company_name": "CLAD 9001",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "155a81f9-be88-4ee6-92fc-1cc4eb82051c",
+    "company_name": "BLUECHANGE",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dca2dde9-a45e-493e-89d2-4a5bc2c6d1b6",
+    "company_name": "CPS (9001-1090)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "66383679-8cce-47dc-8c14-dc47cd4d3154",
+    "company_name": "IMMOBILIARE VALDESI (26000)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: IMMOBILIARE VALDESI (26000) | IMMOBILIARE VALDESI (9001-14001-45001)",
+    "needs_review": true
+  },
+  {
+    "id": "a42b64ea-e164-4d85-b34d-bc2f97e5d84f",
+    "company_name": "ST (PDR 125) STAGE 2",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2ec6253a-677c-4640-b459-6174484e7eb7",
+    "company_name": "TERMATEK",
+    "region": "LIGURIA",
+    "province": "IM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "04161dcb-073a-4be9-b994-0e2f5acb57ce",
+    "company_name": "I-CUBE",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "94ef9912-95f6-4afe-b94c-9118c383e060",
+    "company_name": "DEMCODE (27001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4e9f3791-7991-4e17-85aa-f0e8cb982a89",
+    "company_name": "DEEP LEARNING 27001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8963f889-19fe-4450-9201-3db4b602f7ba",
+    "company_name": "GEO SYSTEM",
+    "region": "LOMBARDIA",
+    "province": "MB",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "96b7a76f-c161-4881-9be7-1036fc7c790d",
+    "company_name": "OTS ASSEMBLY 26000",
+    "region": "PIEMONTE",
+    "province": "AL",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b47e6bcc-4cb2-4935-8e7b-6fff0b613edc",
+    "company_name": "GLOVE ICT (20000)",
+    "region": "EMILIA",
+    "province": "PR",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: GLOVE ICT (20000) | GLOVE ICT (27001-+27017-27018) | GLOVE ICT (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "b3f996e6-ed93-408c-9034-6c3683edbcad",
+    "company_name": "ETS ECOTECNOLOGIE STRADALI",
+    "region": "EMILIA",
+    "province": "PC",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "efe6f467-ce2f-4804-bfd6-81d4a2ca9470",
+    "company_name": "SFERA DEFENCE 27001-27017-27018",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6b4bd7e4-30b7-4bd9-a633-99354ed498de",
+    "company_name": "FMF (45001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: FMF (27001) | FMF (45001)",
+    "needs_review": true
+  },
+  {
+    "id": "e835d257-8ad2-4fea-8120-dcf1c0239a13",
+    "company_name": "CERRO (14001)",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c45ba64a-bb90-45d6-9137-6f540651aa16",
+    "company_name": "RED ARROWS (9001-14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": "24",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dc398b55-9b11-4d0f-bf59-ad0dae9f5a2c",
+    "company_name": "BID COMPANY (14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "33",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0516fc47-1397-4f66-ae0d-2e47112bcf01",
+    "company_name": "AMBROGIO TRASPORTI 9001",
+    "region": "PIEMONTE",
+    "province": "TO",
+    "ea_code": "31;22",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2695a0e2-6b9f-44e7-adcc-7e39b40b7a7a",
+    "company_name": "LUPPI ANGELO (14001+45001)",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9a83eb16-3b4a-4dea-9b6f-f57a3c509bcf",
+    "company_name": "MB STUDIO",
+    "region": "LOMBARDIA",
+    "province": "VA",
+    "ea_code": "32",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b8df8bf1-456d-4bc8-a942-1253605d200d",
+    "company_name": "OG11 TUNNEL",
+    "region": "VENETO",
+    "province": "VI",
+    "ea_code": "19",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e31799fd-2318-4f3e-9740-de06c4507a16",
+    "company_name": "ISSITALIA 9001 (CODICE 39)",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": "39",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b3131955-a1b4-464f-885b-755a1afb8fab",
+    "company_name": "FA-MA JERSEY (45001)",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "4",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "620c0f18-6cd1-44df-82c8-861c8052c9b2",
+    "company_name": "BIOGALVANICA (9001_14001_45001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "23bfb1b2-bb4e-4a34-897c-b8dedb8af2c0",
+    "company_name": "ZAGLI",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8fd95d5a-fef5-4149-9be0-cf1c2534a2a3",
+    "company_name": "ALISFER VIAGGI (45001)",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "31; 32",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "caf26382-6a72-40a1-b4e3-c163d5939d54",
+    "company_name": "BARRACUDA",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "22;29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c204fda2-3151-4919-a65d-841bc269b4ba",
+    "company_name": "ORSATO",
+    "region": "EMILIA",
+    "province": "RE",
+    "ea_code": "39;31;24",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dfa2fbec-00b5-4ec7-a948-c1a4937e148d",
+    "company_name": "SRS ENGINEERING DESIGN",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "622a9224-24f1-4ede-94e3-87b45bc91a40",
+    "company_name": "MET FIBRE OTTICHE",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": "19",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3c355f6b-542e-49ad-8439-572f2a09b65d",
+    "company_name": "CENTRO POLIDIAGNOSTICO NAPOLI",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7dc668c2-ce24-43c5-843a-88e8a38c5bd9",
+    "company_name": "C.I.ME.",
+    "region": "SICILIA",
+    "province": "ME",
+    "ea_code": "33",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "36a725c0-de9a-4464-9e0a-9d377754f91f",
+    "company_name": "VITAMIA",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "74fd8629-bfd8-4858-b79f-8e02d6ee5d28",
+    "company_name": "O.S.A.T",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "718efee3-a959-4315-b31e-4508376cb4e4",
+    "company_name": "RDC SYSTEM",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0bc8aa9c-559a-47bf-90ed-81d00c39b028",
+    "company_name": "FIRENZE",
+    "region": "SICILIA",
+    "province": "TP",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "702d411e-9fe2-4422-a01b-a903a23dd05e",
+    "company_name": "ALCA SERVICE",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "181683b4-8169-47fe-a990-ab02b3146e01",
+    "company_name": "LIBERTI VINCENZO",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7d65435f-342a-44a3-8923-f369041f7f82",
+    "company_name": "SGARGI (PDR 125) - APAVE",
+    "region": "EMILIA",
+    "province": "BO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "146c3ec3-31fe-4dbd-b9e3-3e710cde2991",
+    "company_name": "COSTRUZIONI GENERALI APPENNINO PDR 125 - APAVE",
+    "region": "EMILIA",
+    "province": "MO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "d5623444-57f6-4a0b-8099-a4121e7712cb",
+    "company_name": "MECCANICA SERVICE",
+    "region": "TOSCANA",
+    "province": "PO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f5a0dffe-a011-4823-86b7-fa0221fc2bfa",
+    "company_name": "MECCANICA SERVICE II",
+    "region": "TOSCANA",
+    "province": "PO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a8e17933-00dd-4e96-87cb-569f369e37de",
+    "company_name": "OLIDATA 27001- 27017-27018",
+    "region": null,
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e5faafe3-8955-4d44-8957-da1dfcadbcd5",
+    "company_name": "BERGSTAFF",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6b260bb4-ccae-4631-8f77-1ec73cf672ea",
+    "company_name": "VIGILI DELL'ORDINE 27001-37001",
+    "region": "LIGURIA",
+    "province": "SV",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6715919c-cbc5-4669-afa8-2adb713e3d0d",
+    "company_name": "ISSITALIA (CODICE 31)",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f3ae2068-749a-4943-bc6a-4af73241a923",
+    "company_name": "GRUPPO SIASS",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0117f686-381c-44c3-92c4-809cf0eff99e",
+    "company_name": "PHARMAGEST 27001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "084e9481-08e8-42ec-9dfc-2f86dc3b7b70",
+    "company_name": "FERRARI",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dd9283c6-f5e9-4f50-8cb7-73bd91859e4c",
+    "company_name": "F.LLI PEDROTTI (14001_45001)",
+    "region": "TRENTINO",
+    "province": "TN",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9c880437-ab13-4ecc-a490-ea00037c6765",
+    "company_name": "OBIETTIVO SICUREZZA",
+    "region": "VENETO",
+    "province": "RO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3e189328-4077-4c50-a843-e87c161147e1",
+    "company_name": "GIANPIETRO PIZZO",
+    "region": "VENETO",
+    "province": "RO",
+    "ea_code": "03;29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "26a99c86-b858-45e6-a941-399db5bac8e8",
+    "company_name": "IL FILO ROSSO",
+    "region": "CAMPANIA",
+    "province": "SA",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9c1dace4-b07a-433f-97fb-464afc63354e",
+    "company_name": "MANNET (9001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: MANNET (27001) | MANNET (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "7e85968d-d941-4b03-aac2-1bb47bd509eb",
+    "company_name": "DAITEK",
+    "region": "LOMBARDIA",
+    "province": "MB",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0d64c186-c8c4-4c85-9851-3fc96b58224f",
+    "company_name": "MULDING FORM",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6bc867c1-4c4e-484c-a9c1-b486851c8acb",
+    "company_name": "G.L.M. (9001-14001)",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f7368143-582b-448f-bf6d-75601b75734e",
+    "company_name": "TRADE (9001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "35",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: TRADE (14001) | TRADE (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "1aa15595-9f88-4295-ad8d-cbb04c794d16",
+    "company_name": "L&R SAS",
+    "region": "LOMBARDIA",
+    "province": "VA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "eac0d4d3-5961-43a4-aac4-4a542bc232bf",
+    "company_name": "PROJECT WINDOW (9001-14001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": "28; 29; 34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9448ffdc-3010-432d-bd96-0bd3ca356439",
+    "company_name": "ECOPLAN (14001)",
+    "region": "PIEMONTE",
+    "province": "TO",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e49aa7ec-67fb-417f-8d57-7bc3856cde3a",
+    "company_name": "TAVERNA CAORLINA",
+    "region": "VENETO",
+    "province": "VE",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "96bbf3b8-2b5e-45fd-a9de-a94c43400663",
+    "company_name": "NTL",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0cc52cf1-d1d6-4ccd-a90d-7ed5825f3aa5",
+    "company_name": "PANGEA FORMAZIONE",
+    "region": "TOSCANA",
+    "province": "SI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "03dfe394-f0ac-433a-a53a-2600744e655d",
+    "company_name": "PUCCETTI MATERIE PLASTICHE (14001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4802cacc-532b-4d19-b0d8-75cea35e27cd",
+    "company_name": "FA-MA JERSEY 9001",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "eaebe36d-5e73-4bc6-b592-deb7e09c5226",
+    "company_name": "FA-MA JERSEY 14001",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a914fb3f-4377-4ac2-9478-a7cf4c913b1b",
+    "company_name": "PROMETEO",
+    "region": "CAMPANIA",
+    "province": "SA",
+    "ea_code": "39; 28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "19f017b6-4c39-43de-9d4b-9aa89cd2cbc2",
+    "company_name": "MMC GROUP DI SCALIA",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c9816005-a07a-4e96-a859-b9da92a7a9b8",
+    "company_name": "AESSE SISTEMI",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7d07c53f-6ec5-4392-bdb6-851908cb3082",
+    "company_name": "GAP",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "591a25d3-6da8-48a3-9608-6311671ea57a",
+    "company_name": "ST (PDR 125) S",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b4980cff-6602-4269-bb27-d8128360867e",
+    "company_name": "PHARMAGEST 9001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "852ee673-5f6f-4296-8559-7f9b61ab407c",
+    "company_name": "CONSUTEK (9001)",
+    "region": "LOMBARDIA",
+    "province": "CO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f0a47af1-6fc1-4b9e-aeb7-4f07b7d83693",
+    "company_name": "ISSITALIA adeguamento 27001",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1812895b-1cd9-4193-b37d-d197ce7c647f",
+    "company_name": "SE.CO.GES 9001",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c7196b23-7739-465a-9eed-bce8c7cefeb2",
+    "company_name": "SECOM (27001-27017-27018)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "32f6ff78-60b3-4f81-9a03-de6aa6173433",
+    "company_name": "L.T.A. (9001+27001)",
+    "region": "LOMBARDIA",
+    "province": "BS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c88d4814-f6d2-4506-8e92-a1becfe0d8fe",
+    "company_name": "CRIPPA CLIMATIZZAZIONI",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ce653563-f56e-4d4c-a8b4-ba2b972c61ce",
+    "company_name": "COPYFAX ELETTRONICA",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ea2d691e-ea4d-4005-a007-58b2110dbc89",
+    "company_name": "OTOKAR (EX MAURI BUS SYSTEM) (14001)",
+    "region": "LOMBARDIA",
+    "province": "MB",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "95f82a7f-f3d4-45b0-8315-a970c23308db",
+    "company_name": "SIRIUS INTEGRATED (9001-14001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "35; 32",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f3c9ac8a-e427-4591-a3bf-3320bb6ee47c",
+    "company_name": "BUZZI",
+    "region": "LOMBARDIA",
+    "province": "CO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "c032d0b2-1cd4-49f2-bfdc-1c1a584941bc",
+    "company_name": "RICCOMINI (14001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1ceba957-8092-4bd7-8412-920c9a412125",
+    "company_name": "3 SL SEGNALETICA",
+    "region": "TOSCANA",
+    "province": "PI",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a0d9255d-e6d4-4dea-aee2-5b60754d1e2e",
+    "company_name": "FONDMEC",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "018445d8-32a7-48db-84b8-e76ccc3b2166",
+    "company_name": "AUTO 2000  (45001)",
+    "region": "TOSCANA",
+    "province": "PI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fe36e8b9-2238-4085-87a8-2d01adf0d307",
+    "company_name": "DAVID&SONS -  (9001-45001)",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: DAVID&SONS -  (14001) | DAVID&SONS -  (9001-45001)",
+    "needs_review": true
+  },
+  {
+    "id": "28e74923-fea4-4e01-8745-f52a7ec35ff9",
+    "company_name": "EVOLVIA",
+    "region": "TOSCANA",
+    "province": "SI",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "453f2ec6-695a-44c2-9c7f-228a5ef41695",
+    "company_name": "ORTIMINI FONDERIA",
+    "region": "TOSCANA",
+    "province": "SI",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0235c522-4e6d-4ce8-8da2-7ef7da3c8ac0",
+    "company_name": "TELESKILL 14001",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": "33;37",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ea831b87-9895-4f52-8ac8-823ebbd6fa2f",
+    "company_name": "SO.CO.FER (14001-45001)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": "06;17;22",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7b94193a-96c2-4647-bef8-8f36b45e7c4f",
+    "company_name": "RAD SERVICE (14001-45001)",
+    "region": "UMBRIA",
+    "province": "PG",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fdc9c014-611c-4bba-8bfe-9ac6751b83af",
+    "company_name": "CASCIANO ANTONIO (9001)",
+    "region": "CAMPANIA",
+    "province": "SA",
+    "ea_code": "39; 04",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: CASCIANO ANTONIO (14001-45001) | CASCIANO ANTONIO (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "74c0dccc-00a9-4164-b2c1-b51928a42f88",
+    "company_name": "C.P. SYSTEM",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "883c8dd4-28a8-46f0-9200-0fb061234d83",
+    "company_name": "A.G.S. Informatica",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "d1e35b0b-982d-4a0d-900a-b3d56425d15d",
+    "company_name": "SERVICE GROUP DI PUGGELLI",
+    "region": "SICILIA",
+    "province": "CT",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8f943327-c281-429a-9089-66eea8aaf82d",
+    "company_name": "BVG",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2a9ce986-4a3c-4170-9834-3b64c20fe8f5",
+    "company_name": "OTS ASSEMBLY (PDR 125)",
+    "region": "PIEMONTE",
+    "province": "AL",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4d891882-35c0-47a7-8261-e42d98173d14",
+    "company_name": "ALPI CONSULTING",
+    "region": "LOMBARDIA",
+    "province": "MN",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "688e3fc2-6de6-4b34-9b12-965f554cdeaa",
+    "company_name": "E-SOLUTION 78",
+    "region": "LAZIO",
+    "province": "RI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f5b1eae6-7033-43e9-b60b-ff3f59c4c526",
+    "company_name": "DEEPSTONE 9001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e87e43a9-13c6-4712-a412-1ea3c1cfd4d9",
+    "company_name": "LEARNING EXPERIENCE ARCHITECTS",
+    "region": "CALABRIA",
+    "province": "CS",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e97c5244-957e-486d-b49e-3defbf4bf4bc",
+    "company_name": "SISTEMA VALORE",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b4806e73-b1e9-40c0-9015-c9f6c5a3f71a",
+    "company_name": "MENEGHELLI PDR 125",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e0ea6020-ab08-40ae-abb2-f130a694a957",
+    "company_name": "SACCHI E ASSOCIATI",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fc87c314-c384-4eff-a4c9-f143ef680942",
+    "company_name": "IVS 9001",
+    "region": "VENETO",
+    "province": "TV",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "050f5958-82b6-4fc7-b5b1-52ddb95cbf10",
+    "company_name": "GALILEO (9001- 27001 -37001)",
+    "region": "VENETO",
+    "province": "VR",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "eda42de1-9376-48ac-b7a8-20d5a21678cf",
+    "company_name": "TELESKILL 9001",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2b697559-a585-47c9-8f30-05bf870e7c81",
+    "company_name": "KSOFT",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "436dcd85-2181-4bfe-93c6-825e42750e66",
+    "company_name": "ARTSIA (27001)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: ARTSIA | ARTSIA (27001)",
+    "needs_review": true
+  },
+  {
+    "id": "624e5663-b53d-413c-a548-891a4f90fdaf",
+    "company_name": "CERIANI SERVICE",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b5db2704-bfed-4f1f-968d-2f5fe3e41afe",
+    "company_name": "CERIANI CARRELLI ELEVATORI",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "13bc860a-3dd6-41f3-9073-f77fd6a3eb1d",
+    "company_name": "BARBARIOL",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "da7d8dde-3eab-4147-89ab-56f31fa896b3",
+    "company_name": "ALITRANS (9001-14001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2791bfb1-e216-4b73-a48a-4407d7a5e9e7",
+    "company_name": "TEA LAB 9001-14001-45001",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b43c5ff0-4c7d-4ce9-adf0-4bd9391865bc",
+    "company_name": "TAT",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "4",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "60ff9fa6-ca8a-43be-8e44-eeb14f30c72c",
+    "company_name": "DE TOMI (14001-45001)",
+    "region": "LOMBARDIA",
+    "province": "VA",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "05e2b0cf-737e-429d-836b-5c187f413c2a",
+    "company_name": "CHERRY TECH",
+    "region": "PIEMONTE",
+    "province": "AL",
+    "ea_code": "19",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "13d960ae-d7fb-425d-90b8-813235125783",
+    "company_name": "TUGNOLO (9001- 45001)",
+    "region": "VENETO",
+    "province": "VE",
+    "ea_code": null,
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: TUGNOLO (14001) | TUGNOLO (9001- 45001)",
+    "needs_review": true
+  },
+  {
+    "id": "ac593872-6fce-4d31-b3a4-1452037b98b4",
+    "company_name": "AUTOTRASPORTI BO.TO.PI (9001-14001)",
+    "region": "VENETO",
+    "province": "VE",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "5522321f-6b25-46f6-bf2d-d1a362669c02",
+    "company_name": "GIOVANI E COMUNITA'",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "120dd77d-89dc-4fb5-84e8-c6d1ebb54aa3",
+    "company_name": "NEW CAR",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": "29",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e6fa36b6-8577-4576-9bc0-daf5c568626b",
+    "company_name": "AC AGENZIA SERVIZI",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e5c3ec70-1fbf-4a6d-9dcb-084b2c3e908b",
+    "company_name": "F.LLI FERHATI (9001)",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "28; 39",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: F.LLI FERHATI (14001-45001) | F.LLI FERHATI (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "7ee40108-a824-4b40-9b79-a46f51d75280",
+    "company_name": "CD MECCANICA 14001-45001",
+    "region": "EMILIA",
+    "province": "MO",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "afbde2cb-7715-46f6-adc4-3d9d6786f28c",
+    "company_name": "AMBROGIO TRASPORTI (45001)",
+    "region": "LOMBARDIA",
+    "province": "VA",
+    "ea_code": "31",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: AMBROGIO TRASPORTI (14001) | AMBROGIO TRASPORTI (45001)",
+    "needs_review": true
+  },
+  {
+    "id": "3ed860a2-64fa-419c-82a9-0af6c8d44d09",
+    "company_name": "RG",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0897dfea-5d5b-4bdc-b93a-a5dbc878b540",
+    "company_name": "SEMPREVIVO (9001)",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "29",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: SEMPREVIVO (14001) | SEMPREVIVO (9001)",
+    "needs_review": true
+  },
+  {
+    "id": "5e202814-fed9-4c59-99b9-191975e80857",
+    "company_name": "ADS",
+    "region": "LIGURIA",
+    "province": "GE",
+    "ea_code": "30",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8ea807b7-49b1-4be3-a97e-60d778e239a4",
+    "company_name": "PLUVISERVICE 9001-45001",
+    "region": "LOMBARDIA",
+    "province": "BG",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "276f65fe-6253-4816-a6ca-7d2afc9fc5e1",
+    "company_name": "VILLA ANGELA",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "dc8b1268-ac94-4f03-a5e8-03f539ea3118",
+    "company_name": "SUNNERG GROUP (45001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7bc84243-0bcb-4039-bf3d-a84191135a1a",
+    "company_name": "SOGEPI - VILLA ULIVI",
+    "region": "LAZIO",
+    "province": "FR",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6e2f8e01-e264-4677-baee-0742773adc36",
+    "company_name": "R.R. OFFICE",
+    "region": "SICILIA",
+    "province": "TP",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "eae853a8-f741-4007-b6c0-549c01b98830",
+    "company_name": "MOCER",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a2f85e6b-8938-41c5-9e1f-ca390e0a216a",
+    "company_name": "MEDITERRANEA OFFICE SYSTEM",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "34",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "ec2dd9ca-c6bd-47cb-bf20-21c124a02a83",
+    "company_name": "BILANCERIA SICILIANA",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e5d9cb59-2fcd-4757-b24f-db6e31e78ddd",
+    "company_name": "MORICI MARCO",
+    "region": "SICILIA",
+    "province": "TP",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "19d6f393-f676-48d0-b6e6-e10baae28924",
+    "company_name": "ALDEGHI AURELIO TRASPORTI",
+    "region": "LOMBARDIA",
+    "province": "LC",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fcbdfc96-47ba-4de3-8e46-18120dc51b55",
+    "company_name": "MORETTI BUS",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f0bcdb05-b351-48d9-b252-f3f654c6ef4c",
+    "company_name": "SORGIVA 9001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "db82dd2b-7638-4a92-8312-99b63e854442",
+    "company_name": "CONSORZIO STABILE MAESTRO (20000- 22301)",
+    "region": "LAZIO",
+    "province": "RM",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8018f6b6-3014-4ce8-882a-ec9d52c906fb",
+    "company_name": "TE.TESTING",
+    "region": "EMILIA",
+    "province": "RE",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7e1eb697-0528-4af3-9c27-94782e8a95a7",
+    "company_name": "CD MECCANICA 9001",
+    "region": "EMILIA",
+    "province": "MO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f8f91d3c-dd2a-45f4-bbec-c3cad2d2c77c",
+    "company_name": "SCOTTI 2.0 (27001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "df222831-9faa-4a45-93b1-056462a263bd",
+    "company_name": "FOCUS CONSULTING",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f7a2bd32-3441-4f39-9d1a-baf77e90072a",
+    "company_name": "QUALITY EVOLUTION CONSULTING",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "4dd48dc6-50a4-4660-b9fd-65b21214ad78",
+    "company_name": "OXAL (9001-1090)",
+    "region": "TOSCANA",
+    "province": "PT",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "033db9a5-6e87-4322-bc2f-13b6dbb4ddf3",
+    "company_name": "TOP LEVEL ASCENSORI (9001-45001)",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": "18; 28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "3d30855e-bfcc-4af9-97d9-25eade27e5e4",
+    "company_name": "LOMBARDA FILTRI",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a090ff81-4e4d-4ff5-ac14-b6914a9e47f9",
+    "company_name": "ANDREA TOUR",
+    "region": "EMILIA",
+    "province": "PC",
+    "ea_code": "31",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "0f0bd9a3-e465-4ae2-a078-b8e0451aa07b",
+    "company_name": "HERMES 45001",
+    "region": "TRENTINO",
+    "province": "TN",
+    "ea_code": "30",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "d110af5f-529b-4de9-80bc-16cd8f76d69b",
+    "company_name": "ECOSPACE",
+    "region": "VENETO",
+    "province": "PD",
+    "ea_code": "18",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "7811c6f4-ed1c-41b4-8d1b-7bf097f156f4",
+    "company_name": "AGEDA",
+    "region": "VENETO",
+    "province": "VI",
+    "ea_code": "29; 30",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "efe37a31-33f7-4cb3-b0e6-94f5e91e2f80",
+    "company_name": "ADRIATIC 9001-45001",
+    "region": "VENETO",
+    "province": "RO",
+    "ea_code": "14",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "43327fc8-3095-4647-be2e-78547ad46343",
+    "company_name": "FIBA",
+    "region": "TOSCANA",
+    "province": "SI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "2445b1db-a6b9-49f2-a53c-64187178cfde",
+    "company_name": "LA CERCHIA",
+    "region": "TOSCANA",
+    "province": "LU",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "35b5d02d-ca6d-4a32-84db-182f23b522e8",
+    "company_name": "GM INDUSTRIES (9001-14001-45001)",
+    "region": "TOSCANA",
+    "province": "PO",
+    "ea_code": "17",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "188f1933-b766-497b-b0a5-616f759056cd",
+    "company_name": "FI-LA (EX LAUNDRY 9001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "35",
+    "active": true,
+    "notes": "[VERIFICA] Varianti trovate: FI-LA (14065) | FI-LA (EX LAUNDRY 9001)",
+    "needs_review": true
+  },
+  {
+    "id": "614aad0c-e9d7-4a0b-9cbc-f726401f2fd0",
+    "company_name": "ALTERINI BUS (9001-14001-45001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "31; 32",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "a0dd5e06-855e-4fd8-84fd-561406bb1c58",
+    "company_name": "ALESSI LUIGI (9001-14001-45001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": "4",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "196f7abd-4029-4b16-97e5-d9ae87e35b6a",
+    "company_name": "HEG",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "8da6a9e2-1c46-4fb4-ad2d-7e402b0b6599",
+    "company_name": "DIAGNOSTICA PER IMMAGINI DELLA CASA",
+    "region": "CAMPANIA",
+    "province": "NA",
+    "ea_code": "38",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "52cbdd97-79b3-4373-8ef4-2d3f158f783a",
+    "company_name": "MONTEROTONDO IMPIANTI",
+    "region": "TOSCANA",
+    "province": "GR",
+    "ea_code": "28",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "9ac8a965-1a57-4da5-86c2-3fd375f14d8d",
+    "company_name": "H.E.P.",
+    "region": "FRIULI",
+    "province": "UD",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b000a542-ee16-43f9-b9ca-3761eb48ce25",
+    "company_name": "LS SYSTEM",
+    "region": "SICILIA",
+    "province": "PA",
+    "ea_code": "35",
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "e50fe71c-bb0f-4bfb-8cca-57cda4c5c8f3",
+    "company_name": "SINERGICA PDR 125",
+    "region": "LOMBARDIA",
+    "province": "MI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "fe409dfb-2513-46ab-b979-13e36aa03978",
+    "company_name": "PHARMAGEST 27017-27018",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "1eca5c96-9514-4f97-9f23-d93cff459991",
+    "company_name": "WEB INTERACTIVE SOLUTION",
+    "region": "LAZIO",
+    "province": "RI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "aefa2cb6-9336-4b52-92bf-2428b3f7e976",
+    "company_name": "AUTOGUIDOVIE (27001)",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "6fff4259-5856-43af-b4a2-61b8783a4c6c",
+    "company_name": "STUDIO AGM",
+    "region": "VENETO",
+    "province": "RO",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "b17f4cc9-912b-4c02-90ab-bbb14ebff4c8",
+    "company_name": "FIRLAB (9001-27001)",
+    "region": "TOSCANA",
+    "province": "FI",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "374db7b8-e000-4c2c-9802-10390926848e",
+    "company_name": "SMASH LABS (9001 - 27001)",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "f0592a77-22bd-40b0-91c8-f305faf5bac5",
+    "company_name": "ARBRA SERVICE",
+    "region": "LOMBARDIA",
+    "province": "CR",
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  },
+  {
+    "id": "49b6732f-3618-4b51-b83e-08c8fff1ac17",
+    "company_name": "UPDATA 9001-27001",
+    "region": null,
+    "province": null,
+    "ea_code": null,
+    "active": true,
+    "notes": null,
+    "needs_review": false
+  }
+]

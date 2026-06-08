@@ -1,0 +1,173 @@
+[
+  {
+    "id": "934a5c8e-f59c-47a8-bef1-e92a11bc646a",
+    "name": "ABBENDA",
+    "email": null,
+    "phone": null,
+    "color": "#3B82F6",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "f67e028c-2c05-450a-b4cc-3c93cf488529",
+    "name": "ADAMO",
+    "email": null,
+    "phone": null,
+    "color": "#EF4444",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "f5633902-fb6e-4da7-8c45-773def5c12d8",
+    "name": "AFNOR",
+    "email": null,
+    "phone": null,
+    "color": "#10B981",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "6ee189b3-b0d0-4ab8-8897-fe2c16742447",
+    "name": "ALVANO",
+    "email": null,
+    "phone": null,
+    "color": "#F59E0B",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "53ab43fd-9e78-40b9-b62d-e28556859d0c",
+    "name": "ANGELA",
+    "email": null,
+    "phone": null,
+    "color": "#8B5CF6",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "00bacd81-202d-4b33-a01c-8cc0356d2770",
+    "name": "BALDI",
+    "email": null,
+    "phone": null,
+    "color": "#EC4899",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "74697c15-376c-414e-8ac2-e9e552975981",
+    "name": "BARNINI",
+    "email": null,
+    "phone": null,
+    "color": "#14B8A6",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "76c03408-90e7-4e42-88d1-067c182a3a8e",
+    "name": "BASSI",
+    "email": null,
+    "phone": null,
+    "color": "#F97316",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "3bcc42f1-b52a-47af-b7b3-964ec8cb6781",
+    "name": "CAPRIO",
+    "email": null,
+    "phone": null,
+    "color": "#6366F1",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "221b46eb-a119-4b20-988e-f3d608a13e5b",
+    "name": "DIONISIO",
+    "email": null,
+    "phone": null,
+    "color": "#84CC16",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "0359da0f-e996-49bc-95ca-186cc5c8cf62",
+    "name": "F.ESPOSITO",
+    "email": null,
+    "phone": null,
+    "color": "#06B6D4",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "6f88cafa-d895-4701-bcbd-5702378ed612",
+    "name": "FANTINI",
+    "email": null,
+    "phone": null,
+    "color": "#D946EF",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "6e4eda91-d1c8-4090-82ed-f5c480a342d6",
+    "name": "LETO",
+    "email": null,
+    "phone": null,
+    "color": "#F43F5E",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "4fe7f87e-39fd-44ae-86af-2e707ebdd706",
+    "name": "LOTTI",
+    "email": null,
+    "phone": null,
+    "color": "#0EA5E9",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "cada66ba-ac30-45bb-b10b-5f921a631ea1",
+    "name": "MINELLO",
+    "email": null,
+    "phone": null,
+    "color": "#22C55E",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "717b2da1-3b8c-4fe8-9500-6a38ebbb04df",
+    "name": "MS PUOTI",
+    "email": null,
+    "phone": null,
+    "color": "#EAB308",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "90da4f4e-069d-4753-ab5a-701932547871",
+    "name": "MURACA",
+    "email": null,
+    "phone": null,
+    "color": "#A855F7",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "0f7d5324-adda-41e2-8a8e-012d11ab1094",
+    "name": "PUOTI",
+    "email": null,
+    "phone": null,
+    "color": "#64748B",
+    "active": true,
+    "notes": null
+  },
+  {
+    "id": "f21a739e-eb19-4a05-98cc-3d20e97740cf",
+    "name": "SPORTELLI",
+    "email": null,
+    "phone": null,
+    "color": "#78716C",
+    "active": true,
+    "notes": null
+  }
+]
