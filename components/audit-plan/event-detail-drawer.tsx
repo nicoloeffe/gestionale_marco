@@ -29,7 +29,7 @@ function Drawer({
   return (
     <div className="fixed inset-0 z-50">
       <div className="absolute inset-0 bg-ink-900/30 fade-in" onClick={onClose} />
-      <aside className="absolute right-0 top-0 flex h-full flex-col bg-white shadow-drawer slide-in" style={{ width }}>
+      <aside data-testid="event-detail-drawer" className="absolute right-0 top-0 flex h-full flex-col bg-white shadow-drawer slide-in" style={{ width }}>
         <header className="flex h-14 shrink-0 items-center gap-3 border-b border-ink-100 px-5">
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">

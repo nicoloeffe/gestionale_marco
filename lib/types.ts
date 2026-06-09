@@ -19,7 +19,7 @@ export type ActivityType =
 
 export type LocationType = 'presenza' | 'remoto' | 'misto'
 
-export type UserRole = 'admin' | 'operator'
+export type UserRole = 'admin' | 'operator' | 'viewer'
 
 export interface Auditor {
   id: string
@@ -29,6 +29,7 @@ export interface Auditor {
   color: string
   active: boolean
   notes: string | null
+  ente: string
   created_at: string
   updated_at: string
 }
@@ -46,6 +47,7 @@ export interface Client {
   vat_number: string | null
   active: boolean
   notes: string | null
+  ente: string
   created_at: string
   updated_at: string
 }
@@ -73,6 +75,7 @@ export interface Audit {
   already_invoiced: boolean
   status: AuditStatus
   notes: string | null
+  ente: string
   created_at: string
   updated_at: string
 }
@@ -88,6 +91,7 @@ export interface CalendarEvent {
   title: string | null
   notes: string | null
   status: string | null
+  ente: string
   created_at: string
   updated_at: string
 }

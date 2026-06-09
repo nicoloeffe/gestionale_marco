@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 import {
   Building2,
   CalendarDays,
@@ -14,6 +15,8 @@ import {
   Users,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { LogoutButton } from './logout-button'
+import { getCurrentProfile } from './calendar/repository'
 
 const nav = [
   { href: '/', label: 'Dashboard', icon: LayoutDashboard, section: 'Operativo' },
@@ -30,6 +33,31 @@ const sections = ['Operativo', 'Anagrafiche', 'Strumenti']
 
 export function Sidebar() {
   const pathname = usePathname()
+  const [profile, setProfile] = useState({ name: 'Utente', email: '' })
+
+  useEffect(() => {
+    let active = true
+
+    async function loadProfile() {
+      try {
+        const data = await getCurrentProfile()
+        if (!active) return
+        setProfile({
+          name: data.full_name ?? data.email ?? 'Utente',
+          email: data.email ?? '',
+        })
+      } catch {
+        if (!active) return
+        setProfile({ name: 'Profilo non configurato', email: '' })
+      }
+    }
+
+    void loadProfile()
+
+    return () => {
+      active = false
+    }
+  }, [])
 
   return (
     <aside className="flex h-screen w-[244px] shrink-0 flex-col border-r border-ink-200 bg-white">
@@ -85,14 +113,15 @@ export function Sidebar() {
       </div>
 
       <div className="border-t border-ink-100 p-3">
-        <div className="flex cursor-pointer items-center gap-2.5 rounded-lg p-2 hover:bg-ink-50">
+        <div className="flex items-center gap-2.5 rounded-lg p-2 hover:bg-ink-50">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-emerald-700 text-[11px] font-semibold text-white shadow-sm ring-2 ring-white">
             NL
           </span>
           <div className="min-w-0 flex-1">
-            <div className="truncate text-[13px] font-medium text-ink-800">Pianificatore Demo</div>
-            <div className="truncate text-[11px] text-ink-500">demo@example.com</div>
+            <div className="truncate text-[13px] font-medium text-ink-800">{profile.name}</div>
+            <div className="truncate text-[11px] text-ink-500">{profile.email || 'Profilo locale'}</div>
           </div>
+          <LogoutButton />
         </div>
       </div>
     </aside>

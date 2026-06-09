@@ -1,6 +1,16 @@
-import { createClient } from '@supabase/supabase-js'
+import { createSupabaseBrowserClient } from '@/lib/supabase/browser'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+type SupabaseBrowserClient = ReturnType<typeof createSupabaseBrowserClient>
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+let browserClient: SupabaseBrowserClient | null = null
+
+export function getSupabaseClient() {
+  browserClient ??= createSupabaseBrowserClient()
+  return browserClient
+}
+
+export const supabase = new Proxy({} as SupabaseBrowserClient, {
+  get(_target, prop, receiver) {
+    return Reflect.get(getSupabaseClient() as object, prop, receiver)
+  },
+})

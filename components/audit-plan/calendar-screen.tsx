@@ -10,7 +10,15 @@ import { StatusLegend } from './status-legend'
 import { Btn, Card, Pill } from './ui'
 import { type CalendarFilters, FilterBar, initialCalendarFilters } from './calendar/filter-bar'
 import { MonthGrid, groupByDay } from './calendar/month-grid'
-import { INITIAL_EVENTS, type CalendarEvent, auditorsOf, clientOf, standardsOf } from './calendar/data'
+import {
+  type CalendarCatalogs,
+  type CalendarEvent,
+  auditorsOf,
+  clientOf,
+  setCalendarCatalogs,
+  standardsOf,
+} from './calendar/data'
+import { cancelCalendarEvent, loadCalendarData, saveCalendarEvent } from './calendar/repository'
 import { EventChip } from './calendar/event-chip'
 
 type CalendarViewMode = 'mese' | 'settimana' | 'giorno' | 'programma'
@@ -41,7 +49,8 @@ function useFilteredEvents(events: CalendarEvent[], filters: CalendarFilters) {
 }
 
 export function CalendarScreen() {
-  const [events, setEvents] = useState<CalendarEvent[]>(INITIAL_EVENTS)
+  const [events, setEvents] = useState<CalendarEvent[]>([])
+  const [catalogs, setCatalogs] = useState<CalendarCatalogs>({ clients: [], auditors: [], standards: [] })
   const [filters, setFilters] = useState<CalendarFilters>(initialCalendarFilters)
   const [anchor, setAnchor] = useState(new Date(2026, 4, 1))
   const [viewMode, setViewMode] = useState<CalendarViewMode>('mese')
@@ -49,6 +58,9 @@ export function CalendarScreen() {
   const [editing, setEditing] = useState<CalendarEvent | null>(null)
   const [creating, setCreating] = useState(false)
   const [presetDate, setPresetDate] = useState<Date | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const [saving, setSaving] = useState(false)
   const handledNewParam = useRef(false)
 
   const today = useMemo(() => new Date(2026, 4, 8), [])
@@ -73,6 +85,26 @@ export function CalendarScreen() {
     setEditing(null)
   }
 
+  const reload = async () => {
+    setLoading(true)
+    setError(null)
+
+    try {
+      const data = await loadCalendarData()
+      setCalendarCatalogs(data.catalogs)
+      setCatalogs(data.catalogs)
+      setEvents(data.events)
+    } catch (loadError) {
+      setError(loadError instanceof Error ? loadError.message : 'Errore durante il caricamento del calendario.')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    void reload()
+  }, [])
+
   useEffect(() => {
     if (handledNewParam.current) return
     handledNewParam.current = true
@@ -89,19 +121,39 @@ export function CalendarScreen() {
     setCreating(false)
   }
 
-  const saveEvent = (event: CalendarEvent) => {
-    setEvents((current) => {
-      const exists = current.some((item) => item.id === event.id)
-      return exists ? current.map((item) => (item.id === event.id ? event : item)) : [...current, event]
-    })
-    setCreating(false)
-    setEditing(null)
-    setPresetDate(null)
+  const saveEvent = async (event: CalendarEvent) => {
+    setSaving(true)
+    setError(null)
+
+    try {
+      const saved = await saveCalendarEvent(event)
+      setEvents((current) => {
+        const exists = current.some((item) => item.id === saved.id)
+        return exists ? current.map((item) => (item.id === saved.id ? saved : item)) : [...current, saved]
+      })
+      setCreating(false)
+      setEditing(null)
+      setPresetDate(null)
+    } catch (saveError) {
+      setError(saveError instanceof Error ? saveError.message : 'Errore durante il salvataggio evento.')
+    } finally {
+      setSaving(false)
+    }
   }
 
-  const cancelEvent = (event: CalendarEvent) => {
-    setEvents((current) => current.map((item) => (item.id === event.id ? { ...item, status: 'annullato', performed: false } : item)))
-    setSelected(null)
+  const cancelEvent = async (event: CalendarEvent) => {
+    setSaving(true)
+    setError(null)
+
+    try {
+      const cancelled = await cancelCalendarEvent(event)
+      setEvents((current) => current.map((item) => (item.id === cancelled.id ? cancelled : item)))
+      setSelected(null)
+    } catch (cancelError) {
+      setError(cancelError instanceof Error ? cancelError.message : 'Errore durante l&apos;annullamento evento.')
+    } finally {
+      setSaving(false)
+    }
   }
 
   const goPrev = () =>
@@ -184,6 +236,18 @@ export function CalendarScreen() {
           <FilterBar filters={filters} setFilters={setFilters} count={filtered.length} total={events.length} />
         </div>
 
+        {error ? (
+          <div className="mb-2.5 rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-[13px] text-rose-900">
+            {error}
+          </div>
+        ) : null}
+
+        {loading ? (
+          <Card className="mb-2.5">
+            <div className="py-12 text-center text-[13px] text-ink-500">Caricamento calendario...</div>
+          </Card>
+        ) : null}
+
         <div className="mb-2 flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <Btn variant="secondary" size="sm" onClick={goToday}>
@@ -222,15 +286,17 @@ export function CalendarScreen() {
           </div>
         </div>
 
-        <CalendarView
-          mode={viewMode}
-          anchor={anchor}
-          filteredEvents={filtered}
-          eventsByDay={eventsByDay}
-          onPickDate={(date) => openNew(date)}
-          onPickEvent={setSelected}
-          today={today}
-        />
+        {!loading ? (
+          <CalendarView
+            mode={viewMode}
+            anchor={anchor}
+            filteredEvents={filtered}
+            eventsByDay={eventsByDay}
+            onPickDate={(date) => openNew(date)}
+            onPickEvent={setSelected}
+            today={today}
+          />
+        ) : null}
 
         <div className="mt-4 px-1">
           <StatusLegend />
@@ -244,11 +310,13 @@ export function CalendarScreen() {
         initial={editing}
         presetDate={presetDate}
         onClose={() => {
+          if (saving) return
           setCreating(false)
           setEditing(null)
           setPresetDate(null)
         }}
         onSave={saveEvent}
+        catalogs={catalogs}
       />
     </>
   )

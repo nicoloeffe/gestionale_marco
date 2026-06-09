@@ -5,9 +5,10 @@ import { supabase } from '@/lib/supabase'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
+import type { Client } from '@/lib/db-types'
 
 export default function ClientiPage() {
-  const [clients, setClients] = useState<any[]>([])
+  const [clients, setClients] = useState<Client[]>([])
   const [search, setSearch]   = useState('')
   const [loading, setLoading] = useState(true)
 

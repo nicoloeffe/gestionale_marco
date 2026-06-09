@@ -1,7 +1,7 @@
 'use client'
 
 import { Columns3, Search, SlidersHorizontal } from 'lucide-react'
-import { AUDITORS, CLIENTS, STANDARDS } from '../calendar/data'
+import type { CalendarCatalogs } from '../calendar/data'
 import { STATUSES } from '../status'
 import { Btn, Card, Input, Select } from '../ui'
 import { cn } from '@/lib/utils'
@@ -39,11 +39,13 @@ export function ListFiltersPanel({
   setFilters,
   period,
   setPeriod,
+  catalogs,
 }: {
   filters: ListFilters
   setFilters: React.Dispatch<React.SetStateAction<ListFilters>>
   period: ListPeriod
   setPeriod: (period: ListPeriod) => void
+  catalogs: CalendarCatalogs
 }) {
   const setFilter = (key: keyof ListFilters, value: string) => setFilters((current) => ({ ...current, [key]: value }))
   const hasFilters = Object.values(filters).some((value) => value && value !== 'all') || period !== 'all'
@@ -86,7 +88,7 @@ export function ListFiltersPanel({
       <div className="flex flex-wrap items-center gap-2 border-b border-ink-100 bg-ink-50/40 p-3">
         <Select value={filters.auditor} onChange={(event) => setFilter('auditor', event.target.value)} className="w-[180px]">
           <option value="all">Tutti gli auditor</option>
-          {AUDITORS.map((auditor) => (
+          {catalogs.auditors.map((auditor) => (
             <option key={auditor.id} value={auditor.id}>
               {auditor.name}
             </option>
@@ -94,7 +96,7 @@ export function ListFiltersPanel({
         </Select>
         <Select value={filters.client} onChange={(event) => setFilter('client', event.target.value)} className="w-[220px]">
           <option value="all">Tutte le aziende</option>
-          {CLIENTS.map((client) => (
+          {catalogs.clients.map((client) => (
             <option key={client.id} value={client.id}>
               {client.name}
             </option>
@@ -102,7 +104,7 @@ export function ListFiltersPanel({
         </Select>
         <Select value={filters.standard} onChange={(event) => setFilter('standard', event.target.value)} className="w-[170px]">
           <option value="all">Tutte le norme</option>
-          {STANDARDS.map((standard) => (
+          {catalogs.standards.map((standard) => (
             <option key={standard.id} value={standard.id}>
               {standard.code}
             </option>

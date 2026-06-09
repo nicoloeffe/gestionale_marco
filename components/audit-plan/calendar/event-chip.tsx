@@ -20,6 +20,7 @@ export function EventChip({
 
   return (
     <button
+      data-testid="calendar-event-chip"
       onClick={() => onClick(event)}
       className={cn(
         'ev w-full truncate rounded-md border-l-2 px-1.5 py-1 text-left ring-1 ring-transparent transition hover:-translate-y-px hover:shadow-sm',

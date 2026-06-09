@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
+import type { Auditor } from '@/lib/db-types'
 
 export default function AuditorPage() {
-  const [auditors, setAuditors] = useState<any[]>([])
+  const [auditors, setAuditors] = useState<Auditor[]>([])
   const [loading, setLoading]   = useState(true)
 
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function AuditorPage() {
               <CardContent className="flex items-center gap-4 py-4">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
-                  style={{ backgroundColor: a.color }}
+                  style={{ backgroundColor: a.color ?? '#3b66ee' }}
                 >
                   {a.name.slice(0, 2)}
                 </div>

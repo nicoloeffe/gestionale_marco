@@ -1,12 +1,13 @@
 'use client'
 
-import { AlertTriangle, CheckCircle2, Download, List, MapPin, Plus } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { AlertTriangle, CheckCircle2, Download, List, MapPin, Plus, RefreshCw } from 'lucide-react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { PageHeader } from './page-header'
 import { EventDetailDrawer } from './event-detail-drawer'
 import { EventFormDrawer } from './event-form-drawer'
 import { Btn, KpiCard } from './ui'
-import { INITIAL_EVENTS, type CalendarEvent, auditorsOf, clientOf, standardsOf } from './calendar/data'
+import { type CalendarCatalogs, type CalendarEvent, auditorsOf, clientOf, setCalendarCatalogs, standardsOf } from './calendar/data'
+import { cancelCalendarEvent, loadCalendarData, saveCalendarEvent } from './calendar/repository'
 import { AuditTable, type SortState } from './list/audit-table'
 import { initialListFilters, ListFiltersPanel, type ListFilters, type ListPeriod } from './list/list-filters'
 
@@ -56,13 +57,40 @@ function sortEvents(events: CalendarEvent[], sort: SortState) {
 }
 
 export function ListScreen() {
-  const [events, setEvents] = useState<CalendarEvent[]>(INITIAL_EVENTS)
+  const [events, setEvents] = useState<CalendarEvent[]>([])
+  const [catalogs, setCatalogs] = useState<CalendarCatalogs>({ clients: [], auditors: [], standards: [] })
   const [filters, setFilters] = useState<ListFilters>(initialListFilters)
   const [period, setPeriod] = useState<ListPeriod>('all')
   const [sort, setSort] = useState<SortState>({ key: 'start', dir: 'asc' })
   const [selected, setSelected] = useState<CalendarEvent | null>(null)
   const [editing, setEditing] = useState<CalendarEvent | null>(null)
   const [creating, setCreating] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const reload = useCallback(async () => {
+    setLoading(true)
+    setError(null)
+
+    try {
+      const data = await loadCalendarData()
+      setCalendarCatalogs(data.catalogs)
+      setCatalogs(data.catalogs)
+      setEvents(data.events)
+    } catch (err) {
+      console.error(err)
+      setError(err instanceof Error ? err.message : 'Non riesco a caricare gli eventi audit. Verifica sessione e permessi.')
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    // TODO: split data loading into a route-level boundary when the prototype shell is consolidated.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    void reload()
+  }, [reload])
 
   const filtered = useMemo(() => sortEvents(applyFilters(events, filters, period), sort), [events, filters, period, sort])
   const stats = {
@@ -78,18 +106,40 @@ export function ListScreen() {
     setCreating(false)
   }
 
-  const saveEvent = (event: CalendarEvent) => {
-    setEvents((current) => {
-      const exists = current.some((item) => item.id === event.id)
-      return exists ? current.map((item) => (item.id === event.id ? event : item)) : [...current, event]
-    })
-    setEditing(null)
-    setCreating(false)
+  const saveEvent = async (event: CalendarEvent) => {
+    setSaving(true)
+    setError(null)
+
+    try {
+      const saved = await saveCalendarEvent(event)
+      setEvents((current) => {
+        const exists = current.some((item) => item.id === saved.id)
+        return exists ? current.map((item) => (item.id === saved.id ? saved : item)) : [...current, saved]
+      })
+      setEditing(null)
+      setCreating(false)
+    } catch (err) {
+      console.error(err)
+      setError("Errore durante il salvataggio dell'evento.")
+    } finally {
+      setSaving(false)
+    }
   }
 
-  const cancelEvent = (event: CalendarEvent) => {
-    setEvents((current) => current.map((item) => (item.id === event.id ? { ...item, status: 'annullato', performed: false } : item)))
-    setSelected(null)
+  const cancelEvent = async (event: CalendarEvent) => {
+    setSaving(true)
+    setError(null)
+
+    try {
+      const cancelled = await cancelCalendarEvent(event)
+      setEvents((current) => current.map((item) => (item.id === cancelled.id ? cancelled : item)))
+      setSelected(null)
+    } catch (err) {
+      console.error(err)
+      setError("Errore durante l'annullamento dell'evento.")
+    } finally {
+      setSaving(false)
+    }
   }
 
   return (
@@ -105,11 +155,30 @@ export function ListScreen() {
             </Btn>
           }
           primary={
-            <Btn variant="primary" icon={Plus} onClick={() => setCreating(true)}>
+            <Btn variant="primary" icon={Plus} onClick={() => setCreating(true)} disabled={loading || saving}>
               Nuovo evento
             </Btn>
           }
         />
+
+        {loading ? (
+          <div className="mb-5 flex items-center gap-2 rounded-lg border border-ink-200 bg-white px-4 py-3 text-[13.5px] text-ink-600 shadow-sm">
+            <RefreshCw className="h-4 w-4 animate-spin text-brand-600" />
+            Caricamento eventi audit...
+          </div>
+        ) : null}
+
+        {error ? (
+          <div className="mb-5 flex items-start justify-between gap-3 rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-[13.5px] text-rose-800">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="h-4 w-4" />
+              {error}
+            </div>
+            <Btn variant="danger_g" size="sm" onClick={() => void reload()}>
+              Riprova
+            </Btn>
+          </div>
+        ) : null}
 
         <div className="mb-5 grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-4">
           <KpiCard label="Risultati filtro" value={stats.total} hint={`su ${events.length} totali`} icon={List} />
@@ -119,7 +188,7 @@ export function ListScreen() {
         </div>
 
         <div className="space-y-0">
-          <ListFiltersPanel filters={filters} setFilters={setFilters} period={period} setPeriod={setPeriod} />
+          <ListFiltersPanel filters={filters} setFilters={setFilters} period={period} setPeriod={setPeriod} catalogs={catalogs} />
           <AuditTable
             events={filtered}
             total={events.length}
@@ -143,6 +212,7 @@ export function ListScreen() {
           setEditing(null)
         }}
         onSave={saveEvent}
+        catalogs={catalogs}
       />
     </>
   )

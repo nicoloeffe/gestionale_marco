@@ -24,6 +24,8 @@ export interface Profile {
   user_id: string | null
   full_name: string | null
   role: UserRole
+  ente: string
+  sees_all: boolean
   created_at: string
   updated_at: string
 }
@@ -43,6 +45,7 @@ export interface Client {
   active: boolean
   notes: string | null
   needs_review: boolean
+  ente: string
   created_at: string
   updated_at: string
 }
@@ -55,6 +58,7 @@ export interface Auditor {
   color: string | null
   active: boolean
   notes: string | null
+  ente: string
   created_at: string
   updated_at: string
 }
@@ -90,6 +94,7 @@ export interface Audit {
   import_month: string | null
   import_row: number | null
   needs_review: boolean
+  ente: string
   created_at: string
   updated_at: string
 }
@@ -141,6 +146,7 @@ export interface CalendarEvent {
   import_batch_id: string | null
   needs_review: boolean
   review_note: string | null
+  ente: string
   created_at: string
   updated_at: string
 }

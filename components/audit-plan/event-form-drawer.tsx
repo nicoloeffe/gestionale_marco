@@ -2,8 +2,8 @@
 
 import { Check, Plus, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
-import { AUDITORS, AUDIT_TYPES, CLIENTS, STANDARDS, type CalendarEvent, byId } from './calendar/data'
-import { STATUSES, type EventStatus } from './status'
+import { AUDIT_TYPES, type CalendarCatalogs, type CalendarEvent, byId } from './calendar/data'
+import { STATUSES } from './status'
 import { Btn, Field, Input, Pill, Select, TextArea, Toggle } from './ui'
 import { cn } from '@/lib/utils'
 
@@ -11,12 +11,17 @@ type EventFormValue = Omit<CalendarEvent, 'id'>
 
 function toLocalInput(value: string) {
   const date = new Date(value)
+  if (Number.isNaN(date.getTime())) return ''
+
   const pad = (num: number) => String(num).padStart(2, '0')
   return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`
 }
 
-function fromLocalInput(value: string) {
-  return new Date(value).toISOString()
+function fromLocalInput(value: string, fallback: string) {
+  if (!value) return fallback
+
+  const date = new Date(value)
+  return Number.isNaN(date.getTime()) ? fallback : date.toISOString()
 }
 
 function blankEvent(presetDate: Date | null): EventFormValue {
@@ -24,8 +29,10 @@ function blankEvent(presetDate: Date | null): EventFormValue {
   const end = presetDate ? new Date(presetDate.getFullYear(), presetDate.getMonth(), presetDate.getDate(), 17, 0) : new Date(2026, 4, 15, 17, 0)
 
   return {
+    auditId: null,
     title: '',
     clientId: '',
+    auditorId: '',
     auditorIds: [],
     standardIds: [],
     start: start.toISOString(),
@@ -46,13 +53,15 @@ export function EventFormDrawer({
   presetDate,
   onClose,
   onSave,
+  catalogs,
 }: {
   open: boolean
   mode: 'new' | 'edit'
   initial: CalendarEvent | null
   presetDate: Date | null
   onClose: () => void
-  onSave: (event: CalendarEvent) => void
+  onSave: (event: CalendarEvent) => Promise<void> | void
+  catalogs: CalendarCatalogs
 }) {
   const seed = useMemo<EventFormValue>(() => {
     if (!initial) return blankEvent(presetDate)
@@ -69,12 +78,19 @@ export function EventFormDrawer({
   if (!open) return null
 
   const set = <K extends keyof EventFormValue>(key: K, next: EventFormValue[K]) => setValue((current) => ({ ...current, [key]: next }))
-  const client = byId(CLIENTS, value.clientId)
+  const client = byId(catalogs.clients, value.clientId)
+  const save = (next: EventFormValue) =>
+    onSave({
+      ...next,
+      id: initial?.id ?? `evt-${Date.now()}`,
+      auditorId: next.auditorId || null,
+      auditorIds: next.auditorId ? [next.auditorId] : [],
+    })
 
   return (
     <div className="fixed inset-0 z-50">
       <div className="absolute inset-0 bg-ink-900/30 fade-in" onClick={onClose} />
-      <aside className="absolute right-0 top-0 flex h-full w-[760px] max-w-[calc(100vw-24px)] flex-col bg-white shadow-drawer slide-in">
+      <aside data-testid="event-form-drawer" className="absolute right-0 top-0 flex h-full w-[760px] max-w-[calc(100vw-24px)] flex-col bg-white shadow-drawer slide-in">
         <header className="flex h-14 shrink-0 items-center gap-3 border-b border-ink-100 px-5">
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">
@@ -82,7 +98,7 @@ export function EventFormDrawer({
               <Pill status={value.status} size="sm" />
             </div>
             <div className="truncate text-[12px] text-ink-500">
-              {mode === 'edit' ? `Audit ${value.auditNumber || '—'}` : 'Compila le sezioni principali del mock MVP'}
+              {mode === 'edit' ? `Audit ${value.auditNumber || '—'}` : 'Compila le informazioni principali'}
             </div>
           </div>
           <button onClick={onClose} className="inline-flex h-8 w-8 items-center justify-center rounded-lg text-ink-500 hover:bg-ink-100">
@@ -99,7 +115,7 @@ export function EventFormDrawer({
               <Field label="Azienda / Cliente" required>
                 <Select value={value.clientId ?? ''} onChange={(event) => set('clientId', event.target.value)}>
                   <option value="">— Seleziona —</option>
-                  {CLIENTS.map((item) => (
+                  {catalogs.clients.map((item) => (
                     <option key={item.id} value={item.id}>
                       {item.name}
                     </option>
@@ -121,22 +137,29 @@ export function EventFormDrawer({
                 </Select>
               </Field>
             </div>
-            <Field label="Auditor" hint={`${value.auditorIds.length} selezionati`} required>
-              <MultiSelectChips
-                options={AUDITORS}
-                value={value.auditorIds}
-                onChange={(ids) => set('auditorIds', ids)}
-                getLabel={(id) => byId(AUDITORS, id)?.name ?? id}
-                placeholder="Nessun auditor assegnato"
-              />
+            <Field label="Auditor" required>
+              <Select value={value.auditorId ?? ''} onChange={(event) => {
+                setValue((current) => ({
+                  ...current,
+                  auditorId: event.target.value,
+                  auditorIds: event.target.value ? [event.target.value] : [],
+                }))
+              }}>
+                <option value="">— Seleziona —</option>
+                {catalogs.auditors.map((auditor) => (
+                  <option key={auditor.id} value={auditor.id}>
+                    {auditor.name}
+                  </option>
+                ))}
+              </Select>
             </Field>
             <div className="grid grid-cols-2 gap-3">
               <Field label="Norma / Standard" required>
                 <MultiSelectChips
-                  options={STANDARDS}
+                  options={catalogs.standards}
                   value={value.standardIds}
                   onChange={(ids) => set('standardIds', ids)}
-                  getLabel={(id) => byId(STANDARDS, id)?.code ?? id}
+                  getLabel={(id) => byId(catalogs.standards, id)?.code ?? id}
                   placeholder="Nessuna norma"
                 />
               </Field>
@@ -153,10 +176,10 @@ export function EventFormDrawer({
             </div>
             <div className="grid grid-cols-2 gap-3">
               <Field label="Data inizio" required>
-                <Input type="datetime-local" value={toLocalInput(value.start)} onChange={(event) => set('start', fromLocalInput(event.target.value))} />
+                <Input type="datetime-local" value={toLocalInput(value.start)} onChange={(event) => set('start', fromLocalInput(event.target.value, value.start))} />
               </Field>
               <Field label="Data fine" required>
-                <Input type="datetime-local" value={toLocalInput(value.end)} onChange={(event) => set('end', fromLocalInput(event.target.value))} />
+                <Input type="datetime-local" value={toLocalInput(value.end)} onChange={(event) => set('end', fromLocalInput(event.target.value, value.end))} />
               </Field>
             </div>
           </FormSection>
@@ -215,11 +238,11 @@ export function EventFormDrawer({
           </Btn>
           <Btn
             variant="secondary"
-            onClick={() => onSave({ ...value, id: initial?.id ?? `draft-${Date.now()}`, status: 'bozza' })}
+            onClick={() => save({ ...value, status: 'bozza' })}
           >
             Salva come bozza
           </Btn>
-          <Btn icon={Check} variant="primary" onClick={() => onSave({ ...value, id: initial?.id ?? `evt-${Date.now()}` })}>
+          <Btn icon={Check} variant="primary" onClick={() => save(value)}>
             {mode === 'edit' ? 'Salva modifiche' : 'Crea evento'}
           </Btn>
         </footer>

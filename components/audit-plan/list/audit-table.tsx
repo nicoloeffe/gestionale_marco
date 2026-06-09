@@ -76,7 +76,7 @@ export function AuditTable({
               const end = new Date(event.end)
 
               return (
-                <tr key={event.id} className="group hover:bg-brand-50/30">
+                <tr key={event.id} data-testid="audit-event-row" className="group hover:bg-brand-50/30">
                   <td className="px-3 py-2.5">
                     <input type="checkbox" className="rounded border-ink-300" />
                   </td>

@@ -1,7 +1,16 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { Sidebar } from './sidebar'
 import { Topbar } from './topbar'
 
 export function AppShell({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname()
+
+  if (pathname === '/login') {
+    return <>{children}</>
+  }
+
   return (
     <div className="flex h-screen bg-[#f4f6fa] text-ink-800">
       <Sidebar />
