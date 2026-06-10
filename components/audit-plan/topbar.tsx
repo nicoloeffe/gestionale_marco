@@ -1,8 +1,6 @@
 'use client'
 
-import { Bell, CircleHelp, Search } from 'lucide-react'
 import { usePathname } from 'next/navigation'
-import { Input, Kbd } from './ui'
 
 const titles: Record<string, { title: string; sub: string }> = {
   '/': { title: 'Dashboard', sub: 'Vista operativa di pianificazione' },
@@ -39,19 +37,9 @@ export function Topbar() {
             <span className="truncate text-[12.5px] text-ink-500">{current.sub}</span>
           </div>
         </div>
-        <div className="relative hidden w-[320px] lg:block">
-          <Input icon={Search} placeholder="Cerca audit, aziende, auditor..." />
-          <span className="absolute right-2.5 top-1/2 -translate-y-1/2">
-            <Kbd>⌘K</Kbd>
-          </span>
+        <div className="hidden rounded-lg border border-ink-200 bg-ink-50 px-3 py-1.5 text-[12px] font-medium text-ink-500 sm:block">
+          R1 operativo
         </div>
-        <button className="relative inline-flex h-9 w-9 items-center justify-center rounded-lg border border-ink-200 bg-white text-ink-500 hover:bg-ink-50">
-          <Bell className="h-[18px] w-[18px]" />
-          <span className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-amber-500 ring-2 ring-white" />
-        </button>
-        <button className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-ink-200 bg-white text-ink-500 hover:bg-ink-50">
-          <CircleHelp className="h-[18px] w-[18px]" />
-        </button>
       </div>
     </header>
   )

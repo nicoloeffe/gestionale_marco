@@ -11,21 +11,21 @@ import {
   LayoutDashboard,
   Settings,
   ShieldCheck,
-  Upload,
   Users,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { canManageUsers } from '@/lib/permissions'
+import type { UserRole } from '@/lib/db-types'
 import { LogoutButton } from './logout-button'
 import { getCurrentProfile } from './calendar/repository'
 
 const nav = [
   { href: '/', label: 'Dashboard', icon: LayoutDashboard, section: 'Operativo' },
-  { href: '/calendario', label: 'Calendario', icon: CalendarDays, section: 'Operativo', badge: '23' },
+  { href: '/calendario', label: 'Calendario', icon: CalendarDays, section: 'Operativo' },
   { href: '/audit', label: 'Audit / Eventi', icon: ClipboardList, section: 'Operativo' },
   { href: '/clienti', label: 'Aziende', icon: Building2, section: 'Anagrafiche' },
   { href: '/auditor', label: 'Auditor', icon: Users, section: 'Anagrafiche' },
   { href: '/norme', label: 'Norme', icon: ShieldCheck, section: 'Anagrafiche' },
-  { href: '/import', label: 'Import dati', icon: Upload, section: 'Strumenti' },
   { href: '/settings', label: 'Impostazioni', icon: Settings, section: 'Strumenti' },
 ]
 
@@ -33,7 +33,7 @@ const sections = ['Operativo', 'Anagrafiche', 'Strumenti']
 
 export function Sidebar() {
   const pathname = usePathname()
-  const [profile, setProfile] = useState({ name: 'Utente', email: '' })
+  const [profile, setProfile] = useState<{ name: string; email: string; role: UserRole }>({ name: 'Utente', email: '', role: 'viewer' })
 
   useEffect(() => {
     let active = true
@@ -45,10 +45,11 @@ export function Sidebar() {
         setProfile({
           name: data.full_name ?? data.email ?? 'Utente',
           email: data.email ?? '',
+          role: data.role,
         })
       } catch {
         if (!active) return
-        setProfile({ name: 'Profilo non configurato', email: '' })
+        setProfile({ name: 'Profilo non configurato', email: '', role: 'viewer' })
       }
     }
 
@@ -72,13 +73,18 @@ export function Sidebar() {
       </div>
 
       <div className="flex-1 overflow-y-auto px-2.5 py-3">
-        {sections.map((section) => (
-          <div key={section} className={section === 'Operativo' ? '' : 'pt-4'}>
-            <div className="px-2 pb-1.5 text-[10.5px] font-semibold uppercase tracking-wider text-ink-400">{section}</div>
-            <div className="space-y-0.5">
-              {nav
-                .filter((item) => item.section === section)
-                .map(({ href, label, icon: Icon, badge }) => {
+        {sections.map((section) => {
+          const sectionItems = nav
+            .filter((item) => item.section === section)
+            .filter((item) => item.href !== '/settings' || canManageUsers(profile.role))
+
+          if (sectionItems.length === 0) return null
+
+          return (
+            <div key={section} className={section === 'Operativo' ? '' : 'pt-4'}>
+              <div className="px-2 pb-1.5 text-[10.5px] font-semibold uppercase tracking-wider text-ink-400">{section}</div>
+              <div className="space-y-0.5">
+                {sectionItems.map(({ href, label, icon: Icon }) => {
                   const active = href === '/' ? pathname === '/' : pathname.startsWith(href)
 
                   return (
@@ -94,22 +100,13 @@ export function Sidebar() {
                         <Icon className="h-[18px] w-[18px]" strokeWidth={active ? 2.2 : 1.8} />
                       </span>
                       <span className="flex-1 text-left">{label}</span>
-                      {badge ? (
-                        <span
-                          className={cn(
-                            'inline-flex h-5 min-w-5 items-center justify-center rounded-full px-1.5 text-[11px] font-semibold',
-                            active ? 'bg-brand-600 text-white' : 'bg-ink-200 text-ink-700'
-                          )}
-                        >
-                          {badge}
-                        </span>
-                      ) : null}
                     </Link>
                   )
                 })}
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
 
       <div className="border-t border-ink-100 p-3">

@@ -90,6 +90,7 @@ Questi non devono mai rompersi. Ogni modifica che li tocca richiede test esplici
 - **INV-4 Import sicuro:** nessuna scrittura definitiva prima della conferma esplicita; ri-eseguire l'import non duplica i dati; le voci dubbie finiscono in coda di revisione.
 - **INV-5 Nessuna perdita dati:** annullamento ≠ cancellazione (vedi decisione su delete/annulla).
 - **INV-6 Date/fuso:** gli eventi si salvano in UTC e si mostrano in `Europe/Rome`.
+- **INV-7 Isolamento file:** gli allegati degli eventi stanno in uno Storage **privato** (niente bucket pubblico, niente URL indovinabili). Un utente dell'ente A non può scaricare né elencare i file dell'ente B. L'accesso ai file segue lo stesso `ente` dell'evento, via signed URL o policy di Storage — mai link pubblici.
 
 ---
 

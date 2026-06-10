@@ -1,11 +1,8 @@
 'use client'
 
 import { AlertTriangle, CheckCircle2, LogIn } from 'lucide-react'
-import { useRouter, useSearchParams } from 'next/navigation'
-import type { FormEvent } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
-import { useState } from 'react'
-import { createSupabaseBrowserClient } from '@/lib/supabase/browser'
 import { Btn, Field, Input } from '@/components/audit-plan/ui'
 
 export default function LoginPage() {
@@ -28,38 +25,10 @@ function LoginFallback() {
 }
 
 function LoginContent() {
-  const router = useRouter()
   const searchParams = useSearchParams()
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [error, setError] = useState<string | null>(null)
-  const [loading, setLoading] = useState(false)
   const missingConfig = searchParams.get('missing_config') === '1'
   const authError = searchParams.get('error') === '1'
   const nextPath = searchParams.get('next') || '/'
-
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setError(null)
-    setLoading(true)
-
-    try {
-      const supabase = createSupabaseBrowserClient()
-      const { error: signInError } = await supabase.auth.signInWithPassword({ email, password })
-
-      if (signInError) {
-        setError('Credenziali non valide o utente non abilitato.')
-        return
-      }
-
-      router.replace(nextPath)
-      router.refresh()
-    } catch {
-      setError('Configurazione Supabase mancante o non valida.')
-    } finally {
-      setLoading(false)
-    }
-  }
 
   return (
     <main className="grid min-h-screen place-items-center bg-[#f4f6fa] px-4">
@@ -81,38 +50,34 @@ function LoginContent() {
           </div>
         ) : null}
 
-        {error || authError ? (
+        {authError ? (
           <div className="mb-4 flex gap-2 rounded-lg border border-rose-200 bg-rose-50 p-3 text-[13px] text-rose-900">
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
-            {error ?? 'Credenziali non valide o utente non abilitato.'}
+            Credenziali non valide o utente non abilitato.
           </div>
         ) : null}
 
-        <form action="/auth/login" className="space-y-4" method="post" onSubmit={handleSubmit}>
+        <form action="/auth/login" className="space-y-4" method="post">
           <input name="next" type="hidden" value={nextPath} />
           <Field label="Email" required>
             <Input
               autoComplete="email"
               inputMode="email"
               name="email"
-              onChange={(event) => setEmail(event.target.value)}
               placeholder="nome@azienda.it"
               type="email"
-              value={email}
             />
           </Field>
           <Field label="Password" required>
             <Input
               autoComplete="current-password"
               name="password"
-              onChange={(event) => setPassword(event.target.value)}
               placeholder="Password"
               type="password"
-              value={password}
             />
           </Field>
-          <Btn className="w-full" disabled={loading || missingConfig} icon={LogIn} type="submit" variant="primary">
-            {loading ? 'Accesso...' : 'Entra'}
+          <Btn className="w-full" disabled={missingConfig} icon={LogIn} type="submit" variant="primary">
+            Entra
           </Btn>
         </form>
       </section>

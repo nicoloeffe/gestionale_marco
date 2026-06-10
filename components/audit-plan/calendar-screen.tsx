@@ -1,7 +1,8 @@
 'use client'
 
 import { AlertTriangle, CalendarDays, CheckCircle2, ChevronLeft, ChevronRight, Download, MapPin, Plus, Upload } from 'lucide-react'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { canMutateOperationalData } from '@/lib/permissions'
 import { cn } from '@/lib/utils'
 import { DOW_IT, MONTHS_IT, fmtDate, fmtTime } from './date-utils'
 import { EventDetailDrawer } from './event-detail-drawer'
@@ -20,6 +21,7 @@ import {
 } from './calendar/data'
 import { cancelCalendarEvent, loadCalendarData, saveCalendarEvent } from './calendar/repository'
 import { EventChip } from './calendar/event-chip'
+import { exportEventsToXlsx } from './calendar/export'
 
 type CalendarViewMode = 'mese' | 'settimana' | 'giorno' | 'programma'
 
@@ -61,6 +63,7 @@ export function CalendarScreen() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [saving, setSaving] = useState(false)
+  const [canMutate, setCanMutate] = useState(false)
   const handledNewParam = useRef(false)
 
   const today = useMemo(() => new Date(2026, 4, 8), [])
@@ -78,12 +81,13 @@ export function CalendarScreen() {
     reschedule: monthEvents.filter((event) => event.status === 'da_riprogrammare').length,
   }
 
-  const openNew = (date?: Date) => {
+  const openNew = useCallback((date?: Date) => {
+    if (!canMutate) return
     setPresetDate(date ?? null)
     setCreating(true)
     setSelected(null)
     setEditing(null)
-  }
+  }, [canMutate])
 
   const reload = async () => {
     setLoading(true)
@@ -94,6 +98,7 @@ export function CalendarScreen() {
       setCalendarCatalogs(data.catalogs)
       setCatalogs(data.catalogs)
       setEvents(data.events)
+      setCanMutate(canMutateOperationalData(data.profile.role))
     } catch (loadError) {
       setError(loadError instanceof Error ? loadError.message : 'Errore durante il caricamento del calendario.')
     } finally {
@@ -106,14 +111,14 @@ export function CalendarScreen() {
   }, [])
 
   useEffect(() => {
-    if (handledNewParam.current) return
-    handledNewParam.current = true
+    if (handledNewParam.current || !canMutate) return
 
     const params = new URLSearchParams(window.location.search)
     if (params.get('new') === '1') {
+      handledNewParam.current = true
       openNew()
     }
-  }, [])
+  }, [canMutate, openNew])
 
   const openEdit = (event: CalendarEvent) => {
     setEditing(event)
@@ -192,9 +197,11 @@ export function CalendarScreen() {
             <Btn variant="secondary" icon={Upload} disabled title="Disponibile dopo la migrazione">
               Importa dati
             </Btn>
-            <Btn variant="primary" icon={Plus} onClick={() => openNew()}>
-              Nuovo evento
-            </Btn>
+            {canMutate ? (
+              <Btn variant="primary" icon={Plus} onClick={() => openNew()} disabled={loading || saving || catalogs.clients.length === 0 || catalogs.auditors.length === 0 || catalogs.standards.length === 0}>
+                Nuovo evento
+              </Btn>
+            ) : null}
           </div>
         </div>
 
@@ -280,7 +287,7 @@ export function CalendarScreen() {
                 </button>
               ))}
             </div>
-            <Btn variant="ghost" size="sm" icon={Download}>
+            <Btn variant="ghost" size="sm" icon={Download} onClick={() => void exportEventsToXlsx(filtered, 'calendario-audit')} disabled={filtered.length === 0}>
               Esporta
             </Btn>
           </div>
@@ -295,7 +302,23 @@ export function CalendarScreen() {
             onPickDate={(date) => openNew(date)}
             onPickEvent={setSelected}
             today={today}
+            canCreate={canMutate}
           />
+        ) : null}
+
+        {!loading && !error && events.length === 0 ? (
+          <Card className="mt-3">
+            <div className="py-10 text-center text-[13px] text-ink-500">
+              <div className="font-medium text-ink-800">Nessun evento audit presente</div>
+              <div className="mt-1">{canMutate ? 'Crea il primo evento quando clienti, auditor e norme sono disponibili.' : 'Non ci sono eventi visibili per il tuo profilo.'}</div>
+            </div>
+          </Card>
+        ) : null}
+
+        {!loading && canMutate && (catalogs.clients.length === 0 || catalogs.auditors.length === 0 || catalogs.standards.length === 0) ? (
+          <div className="mt-3 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-[13px] text-amber-900">
+            Per creare eventi servono almeno un cliente, un auditor e una norma attivi.
+          </div>
         ) : null}
 
         <div className="mt-4 px-1">
@@ -303,7 +326,7 @@ export function CalendarScreen() {
         </div>
       </div>
 
-      <EventDetailDrawer event={selected} onClose={() => setSelected(null)} onEdit={openEdit} onCancel={cancelEvent} />
+      <EventDetailDrawer event={selected} onClose={() => setSelected(null)} onEdit={openEdit} onCancel={cancelEvent} canMutate={canMutate} />
       <EventFormDrawer
         open={creating || Boolean(editing)}
         mode={editing ? 'edit' : 'new'}
@@ -330,6 +353,7 @@ function CalendarView({
   onPickDate,
   onPickEvent,
   today,
+  canCreate,
 }: {
   mode: CalendarViewMode
   anchor: Date
@@ -338,17 +362,18 @@ function CalendarView({
   onPickDate: (date: Date) => void
   onPickEvent: (event: CalendarEvent) => void
   today: Date
+  canCreate: boolean
 }) {
   if (mode === 'mese') {
-    return <MonthGrid anchor={anchor} eventsByDay={eventsByDay} onPickDate={onPickDate} onPickEvent={onPickEvent} today={today} />
+    return <MonthGrid anchor={anchor} eventsByDay={eventsByDay} onPickDate={onPickDate} onPickEvent={onPickEvent} today={today} canCreate={canCreate} />
   }
 
   if (mode === 'settimana') {
-    return <WeekView anchor={anchor} eventsByDay={eventsByDay} onPickDate={onPickDate} onPickEvent={onPickEvent} today={today} />
+    return <WeekView anchor={anchor} eventsByDay={eventsByDay} onPickDate={onPickDate} onPickEvent={onPickEvent} today={today} canCreate={canCreate} />
   }
 
   if (mode === 'giorno') {
-    return <DayView anchor={anchor} eventsByDay={eventsByDay} onPickDate={onPickDate} onPickEvent={onPickEvent} today={today} />
+    return <DayView anchor={anchor} eventsByDay={eventsByDay} onPickDate={onPickDate} onPickEvent={onPickEvent} today={today} canCreate={canCreate} />
   }
 
   return <ProgramView anchor={anchor} events={filteredEvents} onPickEvent={onPickEvent} />
@@ -360,12 +385,14 @@ function WeekView({
   onPickDate,
   onPickEvent,
   today,
+  canCreate,
 }: {
   anchor: Date
   eventsByDay: Record<string, CalendarEvent[]>
   onPickDate: (date: Date) => void
   onPickEvent: (event: CalendarEvent) => void
   today: Date
+  canCreate: boolean
 }) {
   const days = weekDays(anchor)
   const todayIso = dayIso(today)
@@ -391,9 +418,11 @@ function WeekView({
           const events = eventsByDay[iso] ?? []
           return (
             <div key={iso} className="min-h-[420px] border-r border-ink-100 p-2 last:border-r-0">
-              <button onClick={() => onPickDate(day)} className="mb-2 inline-flex h-7 items-center rounded-md px-2 text-[12px] font-medium text-brand-700 hover:bg-brand-50">
-                + Nuovo
-              </button>
+              {canCreate ? (
+                <button onClick={() => onPickDate(day)} className="mb-2 inline-flex h-7 items-center rounded-md px-2 text-[12px] font-medium text-brand-700 hover:bg-brand-50">
+                  + Nuovo
+                </button>
+              ) : null}
               <div className="space-y-1.5">
                 {events.map((event) => (
                   <EventChip key={`${event.id}-${iso}`} event={event} onClick={onPickEvent} />
@@ -414,12 +443,14 @@ function DayView({
   onPickDate,
   onPickEvent,
   today,
+  canCreate,
 }: {
   anchor: Date
   eventsByDay: Record<string, CalendarEvent[]>
   onPickDate: (date: Date) => void
   onPickEvent: (event: CalendarEvent) => void
   today: Date
+  canCreate: boolean
 }) {
   const iso = dayIso(anchor)
   const events = eventsByDay[iso] ?? []
@@ -434,9 +465,11 @@ function DayView({
             {fmtDate(anchor)} {isToday ? <span className="ml-2 rounded-full bg-brand-50 px-2 py-0.5 text-[11px] text-brand-700 ring-1 ring-brand-100">Oggi</span> : null}
           </div>
         </div>
-        <Btn variant="primary" size="sm" icon={Plus} onClick={() => onPickDate(anchor)}>
-          Nuovo evento
-        </Btn>
+        {canCreate ? (
+          <Btn variant="primary" size="sm" icon={Plus} onClick={() => onPickDate(anchor)}>
+            Nuovo evento
+          </Btn>
+        ) : null}
       </div>
       <div className="space-y-2 p-4">
         {events.map((event) => (

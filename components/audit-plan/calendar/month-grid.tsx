@@ -63,12 +63,14 @@ export function MonthGrid({
   onPickDate,
   onPickEvent,
   today,
+  canCreate = true,
 }: {
   anchor: Date
   eventsByDay: Record<string, CalendarEvent[]>
   onPickDate: (date: Date) => void
   onPickEvent: (event: CalendarEvent) => void
   today: Date
+  canCreate?: boolean
 }) {
   const cells = useMemo(() => monthGrid(anchor), [anchor])
   const todayIso = dayIso(today)
@@ -112,7 +114,7 @@ export function MonthGrid({
                 >
                   {cell.date.getDate()}
                 </span>
-                {cell.inMonth ? (
+                {cell.inMonth && canCreate ? (
                   <button
                     onClick={() => onPickDate(cell.date)}
                     className="inline-flex h-5 w-5 items-center justify-center rounded text-ink-500 opacity-0 hover:bg-ink-100 group-hover:opacity-100"

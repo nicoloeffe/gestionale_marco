@@ -7,6 +7,7 @@ config({ path: '.env.local' })
 const supabaseUrl = process.env.TEST_SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL
 const anonKey = process.env.TEST_SUPABASE_ANON_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 const serviceRoleKey = process.env.TEST_SUPABASE_SERVICE_ROLE_KEY ?? process.env.SUPABASE_SERVICE_ROLE_KEY
+const attachmentBucket = 'event-attachments'
 
 const hasSupabaseTestEnv = Boolean(supabaseUrl && anonKey && serviceRoleKey)
 const describeIfSupabase = hasSupabaseTestEnv ? describe : describe.skip
@@ -74,6 +75,14 @@ describeIfSupabase('security base: INV-1 / INV-2 / INV-3', () => {
   const enteB = `ENTE_B_${suffix}`
   const clientAId = crypto.randomUUID()
   const clientBId = crypto.randomUUID()
+  const auditAId = crypto.randomUUID()
+  const auditBId = crypto.randomUUID()
+  const eventAId = crypto.randomUUID()
+  const eventBId = crypto.randomUUID()
+  const attachmentAId = crypto.randomUUID()
+  const attachmentBId = crypto.randomUUID()
+  const attachmentAPath = `${enteA}/${eventAId}/a-${suffix}.txt`
+  const attachmentBPath = `${enteB}/${eventBId}/b-${suffix}.txt`
   const insertedClientIds = new Set<string>([clientAId, clientBId])
   let service: SupabaseClient
   let operatorA: TestUser
@@ -108,6 +117,82 @@ describeIfSupabase('security base: INV-1 / INV-2 / INV-3', () => {
     ])
 
     expect(error).toBeNull()
+
+    const { error: auditError } = await service.from('audits').insert([
+      {
+        id: auditAId,
+        audit_number: `ATT-A-${suffix}`,
+        client_id: clientAId,
+        status: 'pianificato',
+        ente: enteA,
+      },
+      {
+        id: auditBId,
+        audit_number: `ATT-B-${suffix}`,
+        client_id: clientBId,
+        status: 'pianificato',
+        ente: enteB,
+      },
+    ])
+    expect(auditError).toBeNull()
+
+    const { error: eventError } = await service.from('calendar_events').insert([
+      {
+        id: eventAId,
+        audit_id: auditAId,
+        start_datetime: '2026-05-16T09:00:00.000Z',
+        end_datetime: '2026-05-16T17:00:00.000Z',
+        all_day: false,
+        title: `Attachment A ${suffix}`,
+        status: 'pianificato',
+        performed_status: 'no',
+        ente: enteA,
+      },
+      {
+        id: eventBId,
+        audit_id: auditBId,
+        start_datetime: '2026-05-17T09:00:00.000Z',
+        end_datetime: '2026-05-17T17:00:00.000Z',
+        all_day: false,
+        title: `Attachment B ${suffix}`,
+        status: 'pianificato',
+        performed_status: 'no',
+        ente: enteB,
+      },
+    ])
+    expect(eventError).toBeNull()
+
+    const { error: uploadError } = await service.storage.from(attachmentBucket).upload(attachmentAPath, `file A ${suffix}`, {
+      contentType: 'text/plain',
+      upsert: true,
+    })
+    expect(uploadError).toBeNull()
+
+    const { error: uploadBError } = await service.storage.from(attachmentBucket).upload(attachmentBPath, `file B ${suffix}`, {
+      contentType: 'text/plain',
+      upsert: true,
+    })
+    expect(uploadBError).toBeNull()
+
+    const { error: attachmentError } = await service.from('event_attachments').insert([
+      {
+        id: attachmentAId,
+        event_id: eventAId,
+        ente: enteA,
+        categoria: 'rapporto',
+        nome_file: `a-${suffix}.txt`,
+        storage_path: attachmentAPath,
+      },
+      {
+        id: attachmentBId,
+        event_id: eventBId,
+        ente: enteB,
+        categoria: 'fattura',
+        nome_file: `b-${suffix}.txt`,
+        storage_path: attachmentBPath,
+      },
+    ])
+    expect(attachmentError).toBeNull()
   })
 
   afterAll(async () => {
@@ -115,6 +200,10 @@ describeIfSupabase('security base: INV-1 / INV-2 / INV-3', () => {
 
     const userIds = [operatorA?.userId, viewerA?.userId, seesAllAdmin?.userId].filter((id): id is string => Boolean(id))
 
+    await service.storage.from(attachmentBucket).remove([attachmentAPath, attachmentBPath])
+    await service.from('event_attachments').delete().in('id', [attachmentAId, attachmentBId])
+    await service.from('calendar_events').delete().in('id', [eventAId, eventBId])
+    await service.from('audits').delete().in('id', [auditAId, auditBId])
     await service.from('clients').delete().in('id', [...insertedClientIds])
     await service.from('profiles').delete().in('user_id', userIds)
 
@@ -220,5 +309,36 @@ describeIfSupabase('security base: INV-1 / INV-2 / INV-3', () => {
     })
 
     expect(profileError).not.toBeNull()
+  })
+
+  it('INV-7: user of ente A cannot list or sign files of ente B', async () => {
+    const bucket = await service.storage.getBucket(attachmentBucket)
+    expect(bucket.error).toBeNull()
+    expect(bucket.data?.public).toBe(false)
+
+    const client = await signIn(operatorA.email, operatorA.password)
+    const { data, error } = await client
+      .from('event_attachments')
+      .select('id, event_id, ente, storage_path')
+      .in('event_id', [eventAId, eventBId])
+
+    expect(error).toBeNull()
+    expect(data).toEqual([
+      {
+        id: attachmentAId,
+        event_id: eventAId,
+        ente: enteA,
+        storage_path: attachmentAPath,
+      },
+    ])
+
+    const ownSignedUrl = await client.storage.from(attachmentBucket).createSignedUrl(attachmentAPath, 60)
+    expect(ownSignedUrl.error).toBeNull()
+    expect(ownSignedUrl.data?.signedUrl).toContain('/object/sign/')
+    expect(ownSignedUrl.data?.signedUrl).not.toContain('/object/public/')
+
+    const forbiddenSignedUrl = await client.storage.from(attachmentBucket).createSignedUrl(attachmentBPath, 60)
+    expect(forbiddenSignedUrl.error).not.toBeNull()
+    expect(forbiddenSignedUrl.data?.signedUrl).toBeFalsy()
   })
 })

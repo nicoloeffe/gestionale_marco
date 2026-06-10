@@ -12,9 +12,9 @@ import {
   MapPin,
   Plus,
   RefreshCw,
-  Upload,
 } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { canMutateOperationalData } from '@/lib/permissions'
 import { DOW_IT, MONTHS_IT_SHORT } from './date-utils'
 import { PageHeader } from './page-header'
 import { Avatar, Btn, Card, KpiCard, Notice, Pill, SectionTitle } from './ui'
@@ -62,6 +62,7 @@ export function DashboardScreen() {
   const [profile, setProfile] = useState<DashboardProfile>({ fullName: 'Utente', email: '' })
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [canMutate, setCanMutate] = useState(false)
 
   const reload = useCallback(async () => {
     setLoading(true)
@@ -76,6 +77,7 @@ export function DashboardScreen() {
         fullName: data.profile.full_name ?? data.profile.email ?? 'Utente',
         email: data.profile.email ?? '',
       })
+      setCanMutate(canMutateOperationalData(data.profile.role))
     } catch (err) {
       console.error(err)
       setError(err instanceof Error ? err.message : 'Non riesco a caricare la dashboard.')
@@ -131,10 +133,10 @@ export function DashboardScreen() {
             Apri calendario
           </Btn>
         }
-        primary={
+        primary={canMutate ?
           <Btn variant="primary" icon={Plus} onClick={() => router.push('/calendario?new=1')} disabled={loading}>
             Nuovo evento
-          </Btn>
+          </Btn> : undefined
         }
       />
 
@@ -259,7 +261,7 @@ export function DashboardScreen() {
         </Card>
 
         <Card>
-          <SectionTitle title="Trend audit" sub="Ultimi 6 mesi" action={<button className="text-[12px] text-brand-700 hover:underline">6M</button>} />
+          <SectionTitle title="Trend audit" sub="Ultimi 6 mesi" />
           <div className="text-[28px] font-semibold tabular-nums tracking-tight text-ink-900">{visibleMonthEvents.length}</div>
           <div className="mt-3">
             <TinyBar data={trend} max={maxTrend} />
@@ -281,9 +283,8 @@ export function DashboardScreen() {
               <p className="mt-0.5 text-[12px] text-ink-500">Comandi operativi sui dati collegati.</p>
             </div>
           </div>
-          <div className="grid grid-cols-1 divide-y divide-ink-100 md:grid-cols-3 md:divide-x md:divide-y-0">
+          <div className="grid grid-cols-1 divide-y divide-ink-100 md:grid-cols-2 md:divide-x md:divide-y-0">
             <QuickAction icon={CalendarDays} title="Apri pianificazione" desc="Vai alla vista mensile degli audit." onClick={() => router.push('/calendario')} />
-            <QuickAction icon={Upload} title="Import dati" desc="Controlla anteprima normalizzata." onClick={() => router.push('/import')} />
             <QuickAction icon={Download} title="Esporta report" desc="Apri la lista eventi filtrabile." onClick={() => router.push('/audit')} />
           </div>
         </Card>

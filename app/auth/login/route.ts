@@ -1,5 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
+import { DEV_SESSION_COOKIE, getDevSessionId } from '@/lib/dev-session'
 import { getSupabaseEnv } from '@/lib/env'
 
 function safeNextPath(value: FormDataEntryValue | null) {
@@ -40,6 +41,15 @@ export async function POST(request: NextRequest) {
     loginUrl.searchParams.set('next', nextPath)
     loginUrl.searchParams.set('error', '1')
     response = NextResponse.redirect(loginUrl)
+  } else {
+    const devSessionId = getDevSessionId()
+
+    if (devSessionId) {
+      response.cookies.set(DEV_SESSION_COOKIE, devSessionId, {
+        path: '/',
+        sameSite: 'lax',
+      })
+    }
   }
 
   return response

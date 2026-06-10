@@ -3,6 +3,7 @@
 import { Edit, Trash2, X } from 'lucide-react'
 import { fmtDate, fmtTime } from './date-utils'
 import { type CalendarEvent, auditorsOf, clientOf, standardsOf } from './calendar/data'
+import { EventAttachmentsPanel } from './event-attachments-panel'
 import { Avatar, Btn, Pill } from './ui'
 
 function Drawer({
@@ -63,11 +64,13 @@ export function EventDetailDrawer({
   onClose,
   onEdit,
   onCancel,
+  canMutate = true,
 }: {
   event: CalendarEvent | null
   onClose: () => void
   onEdit: (event: CalendarEvent) => void
   onCancel: (event: CalendarEvent) => void
+  canMutate?: boolean
 }) {
   if (!event) return null
 
@@ -91,12 +94,16 @@ export function EventDetailDrawer({
           <Btn variant="ghost" onClick={onClose}>
             Chiudi
           </Btn>
-          <Btn variant="danger_g" icon={Trash2} onClick={() => onCancel(event)}>
-            Annulla
-          </Btn>
-          <Btn variant="primary" icon={Edit} onClick={() => onEdit(event)}>
-            Modifica
-          </Btn>
+          {canMutate ? (
+            <>
+              <Btn variant="danger_g" icon={Trash2} onClick={() => onCancel(event)}>
+                Annulla
+              </Btn>
+              <Btn variant="primary" icon={Edit} onClick={() => onEdit(event)}>
+                Modifica
+              </Btn>
+            </>
+          ) : null}
         </>
       }
     >
@@ -184,6 +191,10 @@ export function EventDetailDrawer({
         <h4 className="mb-1.5 mt-5 text-[12px] font-semibold uppercase tracking-wider text-ink-500">Note</h4>
         <div className="min-h-16 rounded-lg border border-ink-100 bg-ink-50/40 p-3.5 text-[13px] text-ink-700">
           {event.notes ? event.notes : <span className="italic text-ink-400">Nessuna nota.</span>}
+        </div>
+
+        <div className="mt-5">
+          <EventAttachmentsPanel eventId={event.id} canMutate={canMutate} />
         </div>
       </div>
     </Drawer>

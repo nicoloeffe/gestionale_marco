@@ -1,5 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
+import { DEV_SESSION_COOKIE, getDevSessionId, hasSupabaseAuthCookie } from '@/lib/dev-session'
 import { getSupabaseEnv } from '@/lib/env'
 
 const publicPaths = ['/login', '/auth/login']
@@ -12,6 +13,29 @@ export async function updateSession(request: NextRequest) {
   let response = NextResponse.next({ request })
   const { url, anonKey, isConfigured } = getSupabaseEnv()
   const pathname = request.nextUrl.pathname
+  const devSessionId = getDevSessionId()
+  const requestCookies = request.cookies.getAll()
+  const devSessionCookie = request.cookies.get(DEV_SESSION_COOKIE)?.value
+
+  if (devSessionId && hasSupabaseAuthCookie(requestCookies) && devSessionCookie !== devSessionId) {
+    const nextResponse = isPublicPath(pathname)
+      ? NextResponse.next({ request })
+      : NextResponse.redirect(new URL(`/login?next=${encodeURIComponent(pathname)}`, request.url))
+
+    requestCookies
+      .filter(
+        (cookie) =>
+          cookie.name === DEV_SESSION_COOKIE || (cookie.name.startsWith('sb-') && cookie.name.includes('-auth-token')),
+      )
+      .forEach((cookie) => {
+        nextResponse.cookies.set(cookie.name, '', {
+          expires: new Date(0),
+          path: '/',
+        })
+      })
+
+    return nextResponse
+  }
 
   if (!isConfigured) {
     if (isPublicPath(pathname)) return response

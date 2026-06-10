@@ -19,6 +19,7 @@ export function AuditTable({
   onPickEvent,
   onEdit,
   onCancel,
+  canMutate = true,
 }: {
   events: CalendarEvent[]
   total: number
@@ -27,6 +28,7 @@ export function AuditTable({
   onPickEvent: (event: CalendarEvent) => void
   onEdit: (event: CalendarEvent) => void
   onCancel: (event: CalendarEvent) => void
+  canMutate?: boolean
 }) {
   const SortHeader = ({ sortKey, label }: { sortKey: keyof CalendarEvent; label: string }) => (
     <button
@@ -148,12 +150,16 @@ export function AuditTable({
                       <button onClick={() => onPickEvent(event)} title="Apri" className="inline-flex h-7 w-7 items-center justify-center rounded text-ink-500 hover:bg-ink-100">
                         <FileText className="h-4 w-4" />
                       </button>
-                      <button onClick={() => onEdit(event)} title="Modifica" className="inline-flex h-7 w-7 items-center justify-center rounded text-ink-500 hover:bg-ink-100">
-                        <Edit className="h-4 w-4" />
-                      </button>
-                      <button onClick={() => onCancel(event)} title="Annulla / Elimina" className="inline-flex h-7 w-7 items-center justify-center rounded text-ink-500 hover:bg-rose-50 hover:text-rose-700">
-                        <Trash2 className="h-4 w-4" />
-                      </button>
+                      {canMutate ? (
+                        <>
+                          <button onClick={() => onEdit(event)} title="Modifica" className="inline-flex h-7 w-7 items-center justify-center rounded text-ink-500 hover:bg-ink-100">
+                            <Edit className="h-4 w-4" />
+                          </button>
+                          <button onClick={() => onCancel(event)} title="Annulla / Elimina" className="inline-flex h-7 w-7 items-center justify-center rounded text-ink-500 hover:bg-rose-50 hover:text-rose-700">
+                            <Trash2 className="h-4 w-4" />
+                          </button>
+                        </>
+                      ) : null}
                     </div>
                   </td>
                 </tr>

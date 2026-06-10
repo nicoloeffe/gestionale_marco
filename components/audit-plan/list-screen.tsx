@@ -2,12 +2,14 @@
 
 import { AlertTriangle, CheckCircle2, Download, List, MapPin, Plus, RefreshCw } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { canMutateOperationalData } from '@/lib/permissions'
 import { PageHeader } from './page-header'
 import { EventDetailDrawer } from './event-detail-drawer'
 import { EventFormDrawer } from './event-form-drawer'
 import { Btn, KpiCard } from './ui'
 import { type CalendarCatalogs, type CalendarEvent, auditorsOf, clientOf, setCalendarCatalogs, standardsOf } from './calendar/data'
 import { cancelCalendarEvent, loadCalendarData, saveCalendarEvent } from './calendar/repository'
+import { exportEventsToXlsx } from './calendar/export'
 import { AuditTable, type SortState } from './list/audit-table'
 import { initialListFilters, ListFiltersPanel, type ListFilters, type ListPeriod } from './list/list-filters'
 
@@ -68,6 +70,7 @@ export function ListScreen() {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [canMutate, setCanMutate] = useState(false)
 
   const reload = useCallback(async () => {
     setLoading(true)
@@ -78,6 +81,7 @@ export function ListScreen() {
       setCalendarCatalogs(data.catalogs)
       setCatalogs(data.catalogs)
       setEvents(data.events)
+      setCanMutate(canMutateOperationalData(data.profile.role))
     } catch (err) {
       console.error(err)
       setError(err instanceof Error ? err.message : 'Non riesco a caricare gli eventi audit. Verifica sessione e permessi.')
@@ -150,15 +154,15 @@ export function ListScreen() {
           title="Eventi audit"
           desc="Tutti gli eventi audit con filtri avanzati per periodo, auditor, azienda, norma e stato. Apri un evento per vederne il dettaglio o modificarlo."
           secondary={
-            <Btn variant="secondary" icon={Download}>
-              Esporta CSV
+            <Btn variant="secondary" icon={Download} onClick={() => void exportEventsToXlsx(filtered, 'lista-eventi-audit')} disabled={filtered.length === 0}>
+              Esporta Excel
             </Btn>
           }
-          primary={
-            <Btn variant="primary" icon={Plus} onClick={() => setCreating(true)} disabled={loading || saving}>
+          primary={canMutate ? (
+            <Btn variant="primary" icon={Plus} onClick={() => setCreating(true)} disabled={loading || saving || catalogs.clients.length === 0 || catalogs.auditors.length === 0 || catalogs.standards.length === 0}>
               Nuovo evento
             </Btn>
-          }
+          ) : undefined}
         />
 
         {loading ? (
@@ -197,11 +201,18 @@ export function ListScreen() {
             onPickEvent={setSelected}
             onEdit={openEdit}
             onCancel={cancelEvent}
+            canMutate={canMutate}
           />
         </div>
+        {!loading && !error && events.length === 0 ? (
+          <div className="mt-4 rounded-xl border border-ink-200 bg-white px-6 py-10 text-center text-[13px] text-ink-500 shadow-card">
+            <div className="font-medium text-ink-800">Nessun evento audit presente</div>
+            <div className="mt-1">{canMutate ? 'Crea il primo evento dal calendario o da questa lista.' : 'Non ci sono eventi visibili per il tuo profilo.'}</div>
+          </div>
+        ) : null}
       </div>
 
-      <EventDetailDrawer event={selected} onClose={() => setSelected(null)} onEdit={openEdit} onCancel={cancelEvent} />
+      <EventDetailDrawer event={selected} onClose={() => setSelected(null)} onEdit={openEdit} onCancel={cancelEvent} canMutate={canMutate} />
       <EventFormDrawer
         open={creating || Boolean(editing)}
         mode={editing ? 'edit' : 'new'}
